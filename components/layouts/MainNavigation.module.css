@@ -1,0 +1,115 @@
+.navigationContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.hotelLogoBox {
+  font-weight: 700;
+  line-height: 1.2;
+  background-color: var(--col-secondary);
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  padding: 1em 0.5em;
+}
+.hotelName {
+  font-size: 0.5rem;
+  letter-spacing: 0.15em;
+  line-height: 1.2;
+  color: var(--col-primary);
+}
+.hotel {
+  font-size: 0.2rem;
+  line-height: 1.2;
+  letter-spacing: 0.6em;
+  text-align: center;
+  margin-top: 1em;
+}
+.menu {
+  color: var(--col-secondary);
+  position: relative;
+  z-index: 5;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+.navLinksWrapperMobile {
+  position: fixed;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  text-align: left;
+  background-color: var(--col-primary);
+  color: white;
+}
+.navListGroup {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 0 6em 3em;
+}
+.navItem {
+  list-style: none;
+  margin: 32px;
+}
+.navItem:hover,
+.navItem:active {
+  text-decoration: underline;
+  /* text-decoration: underline;
+  text-decoration-color: var(--col-secondary);
+  -webkit-text-decoration-color: var(--col-secondary); */
+}
+
+.navLinksWrapperLg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navigationContainer {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 6.25em; */
+  }
+  .menu {
+    display: none;
+  }
+  .navLinksWrapperMobile {
+    display: none;
+  }
+  .navLinksWrapperLg {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .navListGroupLg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navItemLg {
+    list-style: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .navigationContainer {
+    padding: 0 6.25em;
+  }
+  .hotelName {
+    font-size: 2.5rem;
+  }
+  .hotel {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.6em;
+    text-align: left;
+  }
+}

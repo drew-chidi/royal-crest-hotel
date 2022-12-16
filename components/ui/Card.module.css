@@ -1,0 +1,34 @@
+.cardContainer {
+  padding: 0 42px;
+  /* padding: 0 20px; */
+}
+@media (min-width: 425px) {
+  .cardContainer {
+    padding: 0 47px;
+  }
+}
+@media (min-width: 768px) {
+  .cardContainer {
+    padding: 0 84px;
+  }
+}
+@media (min-width: 1024px) {
+  .cardContainer {
+    padding: 0 113px;
+  }
+}
+@media (min-width: 1280px) {
+  .cardContainer {
+    padding: 0 140px;
+  }
+}
+@media (min-width: 1440px) {
+  .cardContainer {
+    padding: 0 157.5;
+  }
+}
+@media (min-width: 1920px) {
+  .cardContainer {
+    padding: 0 210px;
+  }
+}
