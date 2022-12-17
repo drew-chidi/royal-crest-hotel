@@ -6,6 +6,22 @@
 :root {
   --col-primary: rgba(20, 39, 74, 1);
   --col-secondary: #e0b973;
+  --f-h2-sm: 0.9rem;
+  --f-h2-tab-sm: 1.2rem;
+  --f-h2-tab: 1.5rem;
+  --f-h2-tab-l: 1.76rem;
+  --f-h2-l: 2rem;
+  --f-h2-xl: 2.5rem;
+  --f-h2-xxl: 2.8rem;
+  --f-h2-xxxl: 3.75rem;
+  --f-body-sm: 0.4rem;
+  --f-body-tab-sm: 0.5rem;
+  --f-body-tab: 0.6rem;
+  --f-body-tab-l: 0.73rem;
+  --f-body-l: 0.83rem;
+  --f-body-xl: 1rem;
+  --f-body-xxl: 1.17rem;
+  --f-body-xxxl: 1.56rem;
 }
 
 * {
@@ -18,12 +34,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-}
-
-button {
-  outline: none;
-  border: 0;
-  background-color: transparent;
 }
 
 html,
@@ -97,29 +107,119 @@ body {
   font-family: "Spline Sans", sans-serif;
 }
 
-p {
-  line-height: 150%;
-}
-
 a img {
   border: none;
   outline: none;
 }
 
 /* remove dotted lines on some links in FF browser */
-
 a,
 a:active,
 a:visited,
 a img {
   outline: none;
 }
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+h2 {
+  font-size: var(--f-h2-sm);
+  line-height: 1.2;
+  color: var(--col-primary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+button {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  font-size: 0.312rem;
+}
+p,
+label {
+  font-size: 0.312rem;
+  color: var(--col-primary);
+}
+@media (min-width: 480px) {
+  p,
+  button,
+  label {
+    font-size: var(--f-body-sm);
+    /* font-size: 0.4rem; */
   }
-  body {
-    color: white;
-    background: black;
+}
+@media (min-width: 600px) {
+  h2 {
+    font-size: var(--f-h2-tab-sm);
+    font-weight: 700;
   }
-} */
+  p,
+  button,
+  label {
+    font-size: var(--f-body-tab-sm);
+  }
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: var(--f-h2-tab);
+    font-weight: 700;
+  }
+  p,
+  button,
+  label {
+    font-size: var(--f-body-tab);
+  }
+}
+@media (min-width: 900px) {
+  h2 {
+    font-size: var(--f-h2-tab-l);
+    font-weight: 700;
+  }
+  p,
+  button,
+  label {
+    font-size: var(--f-body-tab-l);
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: var(--f-h2-l);
+    font-weight: 700;
+  }
+  p,
+  button,
+  label {
+    font-size: var(--f-body-l);
+  }
+}
+@media (min-width: 1280px) {
+  h2 {
+    font-size: var(--f-h2-xl);
+    font-weight: 700;
+  }
+  p,
+  button,
+  label {
+    font-size: var(--f-body-xl);
+  }
+}
+@media (min-width: 1440px) {
+  h2 {
+    font-size: var(--f-h2-xxl);
+    font-weight: 700;
+  }
+  p,
+  button,
+  label {
+    font-size: var(--f-body-xxl);
+  }
+}
+@media (min-width: 1920px) {
+  h2 {
+    font-size: var(--f-h2-xxxl);
+    font-weight: 700;
+  }
+  p,
+  button,
+  label {
+    font-size: var(--f-body-xxxl);
+  }
+}

@@ -6,6 +6,9 @@
   z-index: 1;
   width: 100%;
 }
+/* .navChangeBg {
+  background-color: var(--col-primary) !important;
+} */
 .hotelLogoBox {
   font-weight: 700;
   line-height: 1.2;

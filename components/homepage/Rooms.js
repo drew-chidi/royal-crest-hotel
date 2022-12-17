@@ -3,28 +3,45 @@ import Link from "next/link";
 import React from "react";
 import Room from "../../assets/images/room-home.svg";
 import Card from "../ui/Card";
+import LinkButton from "../ui/LinkButton";
+import styles from "./Rooms.module.css";
 
 const Rooms = () => {
   return (
-    <Card>
-      <h2>Royal Crest Rooms</h2>
-      <p>All our room types are including complementary breakfast</p>
-      <div>
-        <div>
-          <Image src={Room} alt='room' />
+    <section className={styles.roomContainer}>
+      <Card>
+        <h2 className={styles.title}>Royal Crest Rooms</h2>
+        <p className={styles.intro}>
+          Our beautifully appointed rooms are the perfect retreat after a day of
+          exploration or business. Each room features a comfortable bed dressed
+          in luxurious linens, a flat screen TV, and a private bathroom stocked
+          with plush towels and premium toiletries. Stay connected with
+          complimentary WiFi, or relax with a cup of coffee or tea from the
+          in-room coffee maker.{" "}
+        </p>
+        <div className={styles.imgContainer}>
+          <div className={styles.imgWrapper}>
+            <Image src={Room} alt='room' />
+            <p className={styles.roomDetails}>NGN 30,000/Night</p>
+          </div>
+          <div className={styles.imgWrapper}>
+            <Image src={Room} alt='room' />
+            <p className={styles.roomDetails}>NGN 30,000/Night</p>
+          </div>
+          <div className={styles.imgWrapper}>
+            <Image src={Room} alt='room' />
+            <p className={styles.roomDetails}>NGN 30,000/Night</p>
+          </div>
+          <div className={styles.imgWrapper}>
+            <Image src={Room} alt='room' />
+            <p className={styles.roomDetails}>NGN 30,000/Night</p>
+          </div>
         </div>
-      </div>
-
-      <h3>Luxury redefined</h3>
-      <p>
-        Our rooms are designed to transport you into an environment made for
-        leisure. Take your mind off the day-to-day of home life and find a
-        private paradise for yourself.
-      </p>
-      <button>
-        <Link href='/rooms'>EXPLORE</Link>
-      </button>
-    </Card>
+        <div className={styles.linkButton}>
+          <LinkButton title='EXPLORE' href='room' />
+        </div>
+      </Card>
+    </section>
   );
 };
 

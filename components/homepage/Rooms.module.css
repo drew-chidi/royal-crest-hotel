@@ -1,0 +1,55 @@
+.roomContainer {
+}
+.title {
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+}
+.intro {
+  margin-bottom: 1.2em;
+  text-align: left;
+}
+.imgContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.imgWrapper {
+  position: relative;
+}
+.roomDetails {
+  background-color: var(--col-primary);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  padding: 0.2em;
+  margin: 0.8em 0.2em;
+}
+.linkButton {
+  margin-top: 1.2em;
+}
+@media (min-width: 480px) {
+  .imgContainer {
+    gap: 16px;
+  }
+}
+@media (min-width: 600px) {
+  .roomDetails {
+    padding: 0.2em;
+    margin: 0.5em 0.2em;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+  .imgContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1440px) {
+}
+@media (min-width: 1920px) {
+}

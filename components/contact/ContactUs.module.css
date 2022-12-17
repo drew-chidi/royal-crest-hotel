@@ -1,0 +1,100 @@
+.contactContainer {
+  text-align: center;
+}
+.title {
+  margin-bottom: 0.1em;
+}
+.intro {
+  margin: auto auto 6.68em auto;
+  width: 70%;
+  /* margin: auto; */
+}
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.details {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.phone {
+}
+.emailAddress {
+}
+.formWrapper {
+}
+.form {
+  text-align: left;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  margin-bottom: 0.32em;
+  margin-top: 1.2em;
+}
+.input {
+  outline: none;
+  border: 2px solid rgba(20, 39, 74, 0.5);
+  padding: 0.3em;
+  border-radius: 8px;
+}
+.button {
+  margin-left: auto;
+  margin-top: 11px;
+}
+@media (min-width: 480px) {
+  .details {
+    font-size: 0.625rem;
+  }
+}
+@media (min-width: 600px) {
+  .details {
+    font-size: 0.8rem;
+  }
+  .button {
+    margin-top: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .contactWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .details {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .button {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .details {
+    font-size: 1.325rem;
+  }
+}
+@media (min-width: 1280px) {
+  .details {
+    font-size: 1.675rem;
+  }
+  .button {
+    margin-top: 52px;
+  }
+}
+@media (min-width: 1440px) {
+  .details {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1920px) {
+  .details {
+    font-size: 2.5rem;
+  }
+}

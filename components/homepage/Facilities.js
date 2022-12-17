@@ -12,7 +12,7 @@ import "@splidejs/react-splide/css";
 const Facilities = () => {
   return (
     <Card>
-      <Splide options={{ rewind: true }} aria-label='facilities slide'>
+      {/* <Splide options={{ rewind: true }} aria-label='facilities slide'>
         <SplideSlide>
           <Image src={Restaurant} alt='restaurant' />
         </SplideSlide>
@@ -28,7 +28,7 @@ const Facilities = () => {
         <SplideSlide>
           <Image src={Spa} alt='spa' />
         </SplideSlide>
-      </Splide>
+      </Splide> */}
     </Card>
   );
 };
