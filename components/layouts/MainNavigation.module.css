@@ -1,14 +1,20 @@
 .navigationContainer {
+  /* display: flex;
+  justify-content: space-between;
+  background-color: transparent; */
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+.navChangeBg {
+  background-color: var(--col-primary);
+}
+.navWrap {
   display: flex;
   justify-content: space-between;
   background-color: transparent;
-  position: fixed;
-  z-index: 1;
   width: 100%;
 }
-/* .navChangeBg {
-  background-color: var(--col-primary) !important;
-} */
 .hotelLogoBox {
   font-weight: 700;
   line-height: 1.2;
@@ -31,12 +37,15 @@
   margin-top: 1em;
 }
 .menu {
+  font-size: 1rem;
   color: var(--col-secondary);
-  position: relative;
-  z-index: 5;
+  /* position: relative; */
+  z-index: 3;
   background-color: transparent;
   outline: none;
   border: 0;
+  padding: 0;
+  /* right: 4.8em; */
 }
 .navLinksWrapperMobile {
   position: fixed;
@@ -69,6 +78,12 @@
 
 .navLinksWrapperLg {
   display: none;
+}
+
+@media (min-width: 425px) {
+  .menu {
+    right: 5.35em;
+  }
 }
 
 @media (min-width: 768px) {

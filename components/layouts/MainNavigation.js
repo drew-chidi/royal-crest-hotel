@@ -10,15 +10,6 @@ const MainNavigation = () => {
   const [background, setBackground] = useState(false);
 
   // Changes nav background from transparent to white on blue on scroll
-  // const navBackgroundHandler = () => {
-  //   if (window.scrollY >= 60) {
-  //     setBackground(true);
-  //   } else {
-  //     setBackground(false);
-  //   }
-  // };
-  // window.addEventListener("scroll", navBackgroundHandler);
-
   function onScroll() {
     if (window.scrollY >= 60) {
       setBackground(true);
@@ -36,12 +27,12 @@ const MainNavigation = () => {
   };
   return (
     <div
-      className={`${styles.container} ${
+      className={`${styles.navigationContainer} ${
         background ? styles.navChangeBg : null
       }`}
     >
       <Card>
-        <div className={styles.navigationContainer}>
+        <div className={styles.navWrap}>
           <div className={styles.hotelLogoBox}>
             <p className={styles.hotelName}>ROYAL CREST</p>
             <p className={styles.hotel}>HOTELS</p>
@@ -49,7 +40,6 @@ const MainNavigation = () => {
           <button className={styles.menu} onClick={toggleHandler}>
             {!menuOpen ? <AiOutlineMenu /> : <AiOutlineClose />}
           </button>
-
           {menuOpen && (
             <nav className={styles.navLinksWrapperMobile}>
               <ul className={styles.navListGroup}>
@@ -81,9 +71,7 @@ const MainNavigation = () => {
               </ul>
             </nav>
           )}
-
           {/* -----------  Large Screens --------------- */}
-
           <nav className={styles.navLinksWrapperLg}>
             <ul className={styles.navListGroupLg}>
               <li className={styles.navItemLg}>
