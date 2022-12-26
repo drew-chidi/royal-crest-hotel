@@ -1,13 +1,40 @@
 import React from "react";
-import styles from "./AboutContent.modules.css";
+import Card from "../ui/Card";
+import styles from "./AboutContent.module.css";
 
 const AboutContent = () => {
   return (
-    <div>
+    <Card>
       <section>
         <h2>ABOUT US</h2>
-        <p></p>
-
+        <p>
+          Welcome to the Royal Crest! Located in the heart of Lagos, our hotel
+          offers a blend of modern amenities and classic charm. With [Number]
+          guest rooms and suites, a restaurant and bar, a fitness center, and a
+          pool, we have everything you need for a comfortable and enjoyable
+          stay.
+          <br />
+          <br />
+          Our guest rooms and suites are spacious and well-appointed, with
+          comfortable beds, high-speed internet, and flat-screen TVs. Some rooms
+          also offer stunning views of the city.
+          <br />
+          <br />
+          At our restaurant and bar, you&#39;ll find a range of dining options,
+          from casual fare to fine dining. Our menu features a selection of
+          locally-sourced ingredients and dishes that are sure to please any
+          palate.
+          <br />
+          <br />
+          When you&#39;re not exploring the city, take advantage of our fitness
+          center and pool, which are open to all guests. We also offer a variety
+          of services and amenities to make your stay even more comfortable,
+          including a concierge, room service, and a 24-hour front desk.
+          <br />
+          <br />
+          We look forward to welcoming you to the Royal Crest and making your
+          stay with us a memorable one.
+        </p>
         <div className={styles.missionVision}>
           <div className={styles.missionWrapper}>
             <h3>Mission</h3>
@@ -33,7 +60,7 @@ const AboutContent = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Card>
   );
 };
 
