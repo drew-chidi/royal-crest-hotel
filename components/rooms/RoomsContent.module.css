@@ -1,0 +1,36 @@
+.sectionHeader {
+  text-align: center;
+}
+.contentGroup {
+  border-left: 1px solid var(--col-primary);
+  padding-left: 1em;
+}
+.title {
+  margin-top: 0.3em;
+}
+.icon {
+  border-left: 1px solid var(--col-primary);
+}
+.description {
+  display: none;
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+/* 
+    ----------- MEDIA QUERIES --------
+ */
+
+@media (min-width: 600px) {
+  .itemBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    row-gap: 16px;
+    align-items: center;
+    /* flex-basis: 50%; */
+  }
+  .description {
+    display: block;
+  }
+}

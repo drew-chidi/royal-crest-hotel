@@ -5,8 +5,8 @@ import Pool from "../../assets/images/pool.svg";
 import Spa from "../../assets/images/spa.svg";
 import Restaurant from "../../assets/images/restaurant.svg";
 import Laundry from "../../assets/images/laundry.svg";
-import styles from "./Facilities.module.css";
 import Card from "../ui/Card";
+import styles from "./Facilities.module.css";
 
 const index = () => {
   return (
