@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 import Card from "../ui/Card";
 
 import styles from "./Footer.module.css";
@@ -10,9 +11,9 @@ const Footer = () => {
     <footer className={styles.footerContainer}>
       <Card>
         <div className={styles.footerItemsWrapper}>
-          <div className={styles.nameContainer}>
+          <div className={styles.detailsWrapper}>
             <p className={styles.royalCrest}>ROYAL CREST</p>
-            <p className={styles.hotelSuites}>HOTELS & SUITES</p>
+            <p className={styles.hotelSuites}>HOTELS</p>
 
             <address className={styles.addressContainer}>
               <p className={styles.locationInfo}>
@@ -23,25 +24,23 @@ const Footer = () => {
               </p>
             </address>
           </div>
-          <div className={styles.footerLinksWrapper}>
-            <div>
-              <p className={styles.linkItem}>Home</p>
-              <p className={styles.linkItem}>Facilities</p>
-              <p className={styles.linkItem}>Contact</p>
+          <div className={styles.linksWrapper}>
+            <p className={styles.linkItem}>Home</p>
+            <p className={styles.linkItem}>Facilities</p>
+            <p className={styles.linkItem}>Contact</p>
+          </div>
+          <div className={styles.socialsWrapper}>
+            <div className={styles.socialItem}>
+              <FaFacebookF />
+              <span className={styles.socialName}>Facebook</span>
             </div>
-            <div className={styles.socialsWrapper}>
-              <div className={styles.socialsItem}>
-                <span className={styles.socialIcon}>
-                  <FaFacebookF />
-                </span>
-                {/* <span className={styles.socialTitle}>Facebook</span> */}
-              </div>
-              <div className={styles.socialsItem}>
-                <span className={styles.socialIcon}>
-                  <GrInstagram />
-                </span>
-                {/* <span className={styles.socialItem}>Instagraam</span> */}
-              </div>
+            <div className={styles.socialItem}>
+              <GrInstagram />
+              <span className={styles.socialName}>Instagram</span>
+            </div>
+            <div className={styles.socialItem}>
+              <AiOutlineWhatsApp />
+              <span className={styles.socialName}>08012345678</span>
             </div>
           </div>
         </div>

@@ -22,13 +22,13 @@
   color: white;
 }
 
-.footerItemsWrapper {
+/* .footerItemsWrapper {
   padding: 54px 0px 29px 0;
-
   display: flex;
   justify-content: space-between;
-}
-.nameContainer {
+} */
+.detailsWrapper {
+  color: white;
 }
 .royalCrest {
   font-size: 0.5rem;
@@ -36,6 +36,7 @@
   line-height: 1.2;
   letter-spacing: 0.15em;
   text-align: left;
+  color: white;
 }
 .hotelSuites {
   font-size: 0.3rem;
@@ -43,38 +44,54 @@
   font-weight: 700;
   margin: auto;
   margin-bottom: 1em;
+  color: white;
+  text-align: center;
 }
 .addressContainer {
 }
 .locationInfo {
-  font-size: 0.3rem;
+  font-size: 0.175rem;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0em;
   text-align: left;
+  color: white;
 }
-.footerLinksWrapper {
+/* .footerLinksWrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+} */
+.linksWrapper,
+.socialsWrapper {
+  font-size: 0.2rem;
+  text-align: left;
 }
-.linkItem {
-  font-size: 0.5rem;
+.socialItem {
+  display: flex;
+}
+.linkItem,
+.socialName {
   font-weight: 400;
   line-height: 1.9;
   letter-spacing: 0em;
   text-align: left;
+  color: white;
 }
-.socialsWrapper {
+.linkItem,
+.socialIcon,
+.socialItem,
+.socialName {
+  font-size: inherit;
+}
+/* .socialsWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 4px;
   margin-top: 4px;
-}
-.socialsItem {
-  line-height: 1.9;
-}
+} */
+
 .socialIcon {
   display: flex;
   justify-content: flex-start;
@@ -86,14 +103,37 @@
 .socialTitle {
 }
 
+@media (min-width: 480px) {
+  .locationInfo {
+    font-size: 0.22rem;
+  }
+  .linksWrapper,
+  .socialsWrapper {
+    font-size: 0.25rem;
+    text-align: left;
+  }
+}
+@media (min-width: 600px) {
+  .linksWrapper,
+  .socialsWrapper {
+    font-size: 0.3125rem;
+    text-align: left;
+  }
+}
+
 @media (min-width: 768px) {
   .footerContainer {
     /* padding: 0 64px; */
   }
-  .footerItemsWrapper {
+  /* .footerItemsWrapper {
     padding: 64px 0 26.4px 0;
+  } */
+  .footerItemsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
   }
-  .nameContainer {
+  .detailsWrapper {
   }
   .royalCrest {
     font-size: 0.7rem;
@@ -106,12 +146,22 @@
   .locationInfo {
     font-size: 0.4rem;
   }
+  .linksWrapper,
+  .socialsWrapper {
+    font-size: 0.4rem;
+  }
+}
+@media (min-width: 900px) {
+  .linksWrapper,
+  .socialsWrapper {
+    font-size: 0.47rem;
+  }
 }
 @media (min-width: 1024px) {
-  .footerItemsWrapper {
+  /* .footerItemsWrapper {
     padding-top: 76px 0 35px 0;
-  }
-  .nameContainer {
+  } */
+  .detailsWrapper {
   }
   .royalCrest {
     font-size: 0.83rem;
@@ -122,18 +172,36 @@
   .addressContainer {
   }
   .locationInfo {
-    font-size: 0.6rem;
+    font-size: 0.46rem;
+  }
+  .linksWrapper,
+  .socialsWrapper {
+    font-size: 0.53rem;
   }
 }
 @media (min-width: 1280px) {
+  .locationInfo {
+    font-size: 0.59rem;
+  }
+  .linksWrapper,
+  .socialsWrapper {
+    font-size: 0.67rem;
+  }
 }
 @media (min-width: 1440px) {
+  .locationInfo {
+    font-size: 0.66rem;
+  }
+  .linksWrapper,
+  .socialsWrapper {
+    font-size: 0.75rem;
+  }
 }
 @media (min-width: 1920px) {
-  .footerItemsWrapper {
+  /* .footerItemsWrapper {
     padding-top: 144px 0 66px 0;
-  }
-  .nameContainer {
+  } */
+  .detailsWrapper {
   }
   .royalCrest {
     font-size: 1.56rem;
@@ -149,6 +217,10 @@
     font-size: 0.875rem;
   }
   .footerLinksWrapper {
+  }
+  .linksWrapper,
+  .socialsWrapper {
+    font-size: 1rem;
   }
   .linkItem {
   }
