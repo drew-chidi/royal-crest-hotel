@@ -8,6 +8,7 @@ import Rooms from "../components/homepage/Rooms";
 import Testimonials from "../components/homepage/Testimonials";
 import Footer from "../components/layouts/Footer";
 import MainNavigation from "../components/layouts/MainNavigation";
+import Layout from "../components/layouts/Layout";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -19,18 +20,20 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <MainNavigation />
+      {/* <MainNavigation /> */}
 
-      <main className={styles.main}>
+      {/* <main className={styles.main}> */}
+      <Layout>
         <Hero />
         <About />
         <Facilities />
         <Rooms />
         <Testimonials />
         <ContactUs />
-      </main>
+      </Layout>
+      {/* </main> */}
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

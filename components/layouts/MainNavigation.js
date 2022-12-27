@@ -85,7 +85,7 @@ const MainNavigation = () => {
                 </Link>
               </li>
               <li className={styles.navItemLg}>
-                <Link href='/room' className={styles.linkItemLg}>
+                <Link href='/rooms' className={styles.linkItemLg}>
                   Rooms
                 </Link>
               </li>
