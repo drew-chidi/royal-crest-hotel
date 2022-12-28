@@ -5,7 +5,7 @@ import styles from "./ContactUs.module.css";
 
 const ContactUs = () => {
   return (
-    <section className={styles.contactContainer}>
+    <section className={styles.contactContainer} id='contacts'>
       <Card>
         <h2 className={styles.title}>We are here for you</h2>
         <p className={styles.intro}>

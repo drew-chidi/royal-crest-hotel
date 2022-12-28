@@ -5,6 +5,7 @@ import Image from "next/image";
 import { BsPerson } from "react-icons/bs";
 import styles from "./RoomsContent.module.css";
 import Hero from "./Hero";
+import ContactUs from "../contact/ContactUs";
 
 const RoomsContent = () => {
   return (
@@ -13,7 +14,7 @@ const RoomsContent = () => {
       <section>
         <Card>
           <div>
-            <h2 className={styles.sectionHeader}>ROYAL CREST ROOMS</h2>
+            <h2 className={styles.sectionHeader}> ROOMS & RATES </h2>
             <p className={styles.intro}>
               Here at Royal Crest, we offer a variety of comfortable and stylish
               guest rooms to suit your needs. Whether you are traveling for
@@ -122,6 +123,7 @@ const RoomsContent = () => {
           </div>
         </Card>
       </section>
+      <ContactUs />
     </Fragment>
   );
 };
