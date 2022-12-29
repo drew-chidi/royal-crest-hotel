@@ -22,7 +22,10 @@ const Rooms = () => {
         <div className={styles.imgContainer}>
           <div className={styles.imgWrapper}>
             <Image src={Room} alt='room' />
-            <p className={styles.roomDetails}>NGN 30,000/Night</p>
+            <div className={styles.roomDetails}>
+              <p className={styles.roomType}>Standard Room</p>
+              <p className={styles.price}>NGN 30,000/Night</p>
+            </div>
           </div>
           <div className={styles.imgWrapper}>
             <Image src={Room} alt='room' />
@@ -38,7 +41,7 @@ const Rooms = () => {
           </div>
         </div>
         <div className={styles.linkButton}>
-          <LinkButton title='EXPLORE' href='room' />
+          <LinkButton title='EXPLORE' href='rooms' />
         </div>
       </Card>
     </section>

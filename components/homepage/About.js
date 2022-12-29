@@ -17,9 +17,6 @@ const About = () => {
             service, and a memorable stay.
           </p>
           <LinkButton title='Learn more' href='about' />
-          {/* <button>
-          <Link href='/about'>Learn more</Link>
-        </button> */}
         </div>
       </Card>
     </section>

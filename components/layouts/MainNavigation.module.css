@@ -8,6 +8,7 @@
 }
 .navChangeBg {
   background-color: var(--col-primary);
+  opacity: 0.95;
 }
 .navWrap {
   display: flex;

@@ -9,7 +9,10 @@ const Testimonials = () => {
     <section className={styles.testimonialsContainer}>
       <Card>
         <h2 className={styles.sectionTitle}>Testimonials</h2>
-        <Splide options={{ rewind: true }} aria-label='facilities slide'>
+        <Splide
+          options={{ rewind: true, pagination: false }}
+          aria-label='facilities slide'
+        >
           <SplideSlide>
             <p
               className={styles.statement}
@@ -41,18 +44,6 @@ const Testimonials = () => {
             <p className={styles.author}> Mr. and Mrs. Njoku, Lagos</p>{" "}
           </SplideSlide>
         </Splide>
-        <p
-          className={styles.statement}
-        >{`"Calm, Serene, Retro – What a way to relax and enjoy"`}</p>
-        <p className={styles.author}> Mr. and Mrs. Njoku, Lagos</p>
-        <div className={styles.buttonGroup}>
-          <button className={styles.chevronIcon}>
-            <BsChevronRight />
-          </button>
-          <button className={styles.chevronIcon}>
-            <BsChevronLeft />
-          </button>
-        </div>
       </Card>
     </section>
   );
