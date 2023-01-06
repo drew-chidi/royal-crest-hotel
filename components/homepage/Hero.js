@@ -19,14 +19,6 @@ const Hero = () => {
             Enjoy luxury redefined at the most affordable rates
           </p>
           <Button title='BOOK NOW' iconName='book' />
-          {/* <div className={styles.buttonContainer}>
-            <button className={styles.contactUsButton}>
-              <span className={styles.contactIcon}>
-                <AiOutlineContacts />
-              </span>
-              <span className={styles.buttonTitle}>BOOK NOW</span>
-            </button>
-          </div> */}
         </div>
       </Card>
     </div>

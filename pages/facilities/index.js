@@ -1,11 +1,15 @@
 import React from "react";
-import Facilities from "../../components/facilities/Facilities";
+import FacilitiesContent from "../../components/facilities/FacilitiesContent";
+import FacilitiesHero from "../../components/facilities/FacilitiesHero";
 import Layout from "../../components/layouts/Layout";
+import ContactUs from "../../components/contact/ContactUs";
 
 const index = () => {
   return (
     <Layout>
-      <Facilities />
+      <FacilitiesHero />
+      <FacilitiesContent />
+      <ContactUs />
     </Layout>
   );
 };

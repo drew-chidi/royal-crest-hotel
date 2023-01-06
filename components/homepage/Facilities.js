@@ -8,10 +8,9 @@ import Spa from "../../assets/images/spa.svg";
 import Restaurant from "../../assets/images/restaurant.svg";
 import Laundry from "../../assets/images/laundry.svg";
 import { FacilitiesData } from "../../data/facilities-data";
-
+import "@splidejs/react-splide/css";
 import styles from "./Facilities.module.css";
 
-import "@splidejs/react-splide/css";
 import LinkButton from "../ui/LinkButton";
 const Facilities = () => {
   return (

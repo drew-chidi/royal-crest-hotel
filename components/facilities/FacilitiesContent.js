@@ -6,12 +6,30 @@ import Spa from "../../assets/images/spa.svg";
 import Restaurant from "../../assets/images/restaurant.svg";
 import Laundry from "../../assets/images/laundry.svg";
 import Card from "../ui/Card";
-import styles from "./Facilities.module.css";
+import styles from "./FacilitiesContent.module.css";
 
-const index = () => {
+const FacilitiesContent = () => {
   return (
-    <section>
+    <section
+      id='section'
+      aria-label='facilities content'
+      className={styles.sectionContainer}
+    >
       <Card>
+        <div>
+          <h2 className={styles.sectionHeader}> OUR FACILITIES </h2>
+          <p className={styles.intro}>
+            Our hotel offers a range of facilities to make your stay as
+            comfortable and enjoyable as possible. Our guest rooms are equipped
+            with modern amenities such as flat-screen TVs, complimentary Wi-Fi,
+            and private bathrooms. We also have an on-site restaurant that
+            serves a variety of delicious meals and drinks. In addition, our
+            hotel features a fitness center, outdoor pool, and business center
+            for our guests&#39; convenience. Our friendly and helpful staff are
+            always on hand to assist with any requests or needs you may have
+            during your stay. We look forward to welcoming you to our hotel.
+          </p>
+        </div>
         <div className={styles.itemBox}>
           <div className={styles.imgWrapper}>
             <Image src={Gym} alt='the gym' />
@@ -112,4 +130,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default FacilitiesContent;
