@@ -1,5 +1,6 @@
 .contactContainer {
   text-align: center;
+  padding-bottom: 51.3px;
 }
 .title {
   margin-bottom: 0.1em;
@@ -49,8 +50,11 @@
   border-radius: 8px;
 }
 .button {
-  margin-left: auto;
-  margin-top: 11px;
+  /* margin-left: auto; */
+  margin: 11px 0 11px auto;
+}
+.mapLocation iframe {
+  filter: invert(100%);
 }
 @media (min-width: 480px) {
   .contactContainer {
@@ -69,6 +73,7 @@
   }
   .button {
     margin-top: 16px;
+    margin-bottom: 16px;
   }
 }
 @media (min-width: 768px) {
@@ -92,6 +97,7 @@
   }
   .button {
     margin-top: 24px;
+    margin-bottom: 24px;
   }
 }
 @media (min-width: 1024px) {
@@ -111,6 +117,7 @@
   }
   .button {
     margin-top: 52px;
+    margin-bottom: 52px;
   }
 }
 @media (min-width: 1440px) {

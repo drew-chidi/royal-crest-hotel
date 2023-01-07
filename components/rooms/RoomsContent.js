@@ -6,6 +6,7 @@ import { BsPerson } from "react-icons/bs";
 import styles from "./RoomsContent.module.css";
 import Hero from "./Hero";
 import ContactUs from "../contact/ContactUs";
+import RoomAmenities from "./RoomAmenities";
 
 const RoomsContent = () => {
   return (
@@ -30,6 +31,7 @@ const RoomsContent = () => {
               surrounding area.
             </p>
           </div>
+          <RoomAmenities />
           <div className={styles.itemBox}>
             <div className={styles.imgWrapper}>
               <Image src={Standard} alt='the standard room' />
