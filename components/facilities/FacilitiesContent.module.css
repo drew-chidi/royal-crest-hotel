@@ -9,22 +9,6 @@
 .intro {
   margin-bottom: 3.25em;
 }
-.itemBox .imgWrapper {
-  transform: rotate(-6deg);
-  transition-duration: 0.6s;
-}
-.itemBoxReverse .imgWrapper {
-  transform: rotate(6deg);
-  transition-duration: 0.6s;
-}
-.itemBoxReverse:hover .imgWrapper {
-  transform: rotate(0deg);
-  transition-duration: 0.6s;
-}
-.itemBox:hover .imgWrapper {
-  transform: rotate(0deg);
-  transition-duration: 0.6s;
-}
 
 .contentGroup {
   border-left: 1px solid var(--col-primary);
@@ -42,6 +26,22 @@
 @media (min-width: 600px) {
   .sectionContainer {
     padding-bottom: 70px;
+  }
+  .itemBox .imgWrapper {
+    transform: rotate(-6deg);
+    transition-duration: 0.6s;
+  }
+  .itemBoxReverse .imgWrapper {
+    transform: rotate(6deg);
+    transition-duration: 0.6s;
+  }
+  .itemBoxReverse:hover .imgWrapper {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  .itemBox:hover .imgWrapper {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
   }
   .itemBox {
     display: flex;

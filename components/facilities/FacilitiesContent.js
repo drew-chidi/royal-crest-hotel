@@ -17,7 +17,7 @@ const FacilitiesContent = () => {
     >
       <Card>
         <div>
-          <h2 className={styles.sectionHeader}> OUR FACILITIES </h2>
+          <h1 className={styles.sectionHeader}> OUR FACILITIES </h1>
           <p className={styles.intro}>
             Our hotel offers a range of facilities to make your stay as
             comfortable and enjoyable as possible. Our guest rooms are equipped

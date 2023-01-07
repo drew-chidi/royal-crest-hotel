@@ -6,14 +6,14 @@
 :root {
   --col-primary: rgba(20, 39, 74, 1);
   --col-secondary: #e0b973;
-  --f-h2-sm: 0.9rem;
-  --f-h2-tab-sm: 1.2rem;
-  --f-h2-tab: 1.5rem;
-  --f-h2-tab-l: 1.76rem;
-  --f-h2-l: 2rem;
-  --f-h2-xl: 2.5rem;
-  --f-h2-xxl: 2.8rem;
-  --f-h2-xxxl: 3.75rem;
+  --f-h1-sm: 0.9rem;
+  --f-h1-tab-sm: 1.2rem;
+  --f-h1-tab: 1.5rem;
+  --f-h1-tab-l: 1.76rem;
+  --f-h1-l: 2rem;
+  --f-h1-xl: 2.5rem;
+  --f-h1-xxl: 2.8rem;
+  --f-h1-xxxl: 3.75rem;
   --f-body-sm: 0.4rem;
   --f-body-tab-sm: 0.5rem;
   --f-body-tab: 0.6rem;
@@ -120,8 +120,22 @@ a img {
   outline: none;
 }
 
+h1 {
+  font-size: var(--f-h1-sm);
+  line-height: 1.2;
+  color: var(--col-primary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
 h2 {
-  font-size: var(--f-h2-sm);
+  font-size: 1.375rem;
+  line-height: 1.2;
+  color: var(--col-primary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+h3 {
+  font-size: 1.1875rem;
   line-height: 1.2;
   color: var(--col-primary);
   font-weight: 700;
@@ -147,9 +161,15 @@ label {
   }
 }
 @media (min-width: 600px) {
-  h2 {
-    font-size: var(--f-h2-tab-sm);
+  h1 {
+    font-size: var(--f-h1-tab-sm);
     font-weight: 700;
+  }
+  h2 {
+    font-size: 1.625rem;
+  }
+  h3 {
+    font-size: 1.25rem;
   }
   p,
   button,
@@ -158,8 +178,8 @@ label {
   }
 }
 @media (min-width: 768px) {
-  h2 {
-    font-size: var(--f-h2-tab);
+  h1 {
+    font-size: var(--f-h1-tab);
     font-weight: 700;
   }
   p,
@@ -169,8 +189,8 @@ label {
   }
 }
 @media (min-width: 900px) {
-  h2 {
-    font-size: var(--f-h2-tab-l);
+  h1 {
+    font-size: var(--f-h1-tab-l);
     font-weight: 700;
   }
   p,
@@ -180,8 +200,8 @@ label {
   }
 }
 @media (min-width: 1024px) {
-  h2 {
-    font-size: var(--f-h2-l);
+  h1 {
+    font-size: var(--f-h1-l);
     font-weight: 700;
   }
   p,
@@ -191,9 +211,15 @@ label {
   }
 }
 @media (min-width: 1280px) {
-  h2 {
-    font-size: var(--f-h2-xl);
+  h1 {
+    font-size: var(--f-h1-xl);
     font-weight: 700;
+  }
+  h2 {
+    font-size: 2.1875rem;
+  }
+  h3 {
+    font-size: 1.875rem;
   }
   p,
   button,
@@ -202,8 +228,8 @@ label {
   }
 }
 @media (min-width: 1440px) {
-  h2 {
-    font-size: var(--f-h2-xxl);
+  h1 {
+    font-size: var(--f-h1-xxl);
     font-weight: 700;
   }
   p,
@@ -213,8 +239,8 @@ label {
   }
 }
 @media (min-width: 1920px) {
-  h2 {
-    font-size: var(--f-h2-xxxl);
+  h1 {
+    font-size: var(--f-h1-xxxl);
     font-weight: 700;
   }
   p,

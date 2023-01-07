@@ -50,7 +50,7 @@ const FacilitiesHero = () => {
             <Image src={Spa} alt='spa' className={styles.img} />
           </SplideSlide>
         </Splide>
-        <Card>
+        {/* <Card>
           <div className={styles.welcomeBox}>
             <p className={styles.welcomep1}>WELCOME TO</p>
             <h1 className={styles.welcomeHeading}>ROYAL CREST</h1>
@@ -63,7 +63,7 @@ const FacilitiesHero = () => {
             </p>
             <Button title='BOOK NOW' iconName='book' />
           </div>
-        </Card>
+        </Card> */}
       </div>
     </div>
   );

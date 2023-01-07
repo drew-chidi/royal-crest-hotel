@@ -4,6 +4,15 @@ import React from "react";
 import Room from "../../assets/images/room-home.svg";
 import Card from "../ui/Card";
 import LinkButton from "../ui/LinkButton";
+
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import Button from "../ui/Button";
+import Gym from "../../assets/images/gym.svg";
+import Pool from "../../assets/images/pool.svg";
+import Spa from "../../assets/images/spa.svg";
+import Restaurant from "../../assets/images/restaurant.svg";
+import Laundry from "../../assets/images/laundry.svg";
+import "@splidejs/react-splide/css";
 import styles from "./Rooms.module.css";
 
 const Rooms = () => {
@@ -19,7 +28,7 @@ const Rooms = () => {
           complimentary WiFi, or relax with a cup of coffee or tea from the
           in-room coffee maker.{" "}
         </p>
-        <div className={styles.imgContainer}>
+        {/* <div className={styles.imgContainer}>
           <div className={styles.imgWrapper}>
             <Image src={Room} alt='room' />
             <div className={styles.roomDetails}>
@@ -39,7 +48,141 @@ const Rooms = () => {
             <Image src={Room} alt='room' />
             <p className={styles.roomDetails}>NGN 30,000/Night</p>
           </div>
-        </div>
+        </div> */}
+        <Splide
+          options={{
+            pagination: false,
+            // autoplay: true,
+            // heightRatio: 0.6,
+            // mediaQuery: "min",
+            // breakpoints: {
+            //   600: {
+            //     heightRatio: 0.5,
+            //   },
+            // },
+          }}
+          aria-label='facilities slide'
+        >
+          {/* <div class='splide__arrows '>
+            <button class='splide__arrow splide__arrow--prev '>Prev</button>
+            <button class='splide__arrow splide__arrow--next'>Next</button>
+          </div> */}
+          <SplideSlide>
+            <div className={styles.slideWrapper}>
+              <div className={styles.imgWrapper}>
+                <Image src={Room} alt='room' />
+              </div>{" "}
+              <div className={styles.roomDetails}>
+                <h3 className={styles.roomType}>Standard Room</h3>
+                <p className={styles.roomDescription}>
+                  Our standard hotel room is a comfortable and affordable option
+                  for travelers. It features a cozy bed, a desk, and a private
+                  bathroom. Amenities include access to high-speed internet,
+                  cable TV, and a phone. Our standard room is the perfect choice
+                  for a relaxing and enjoyable stay.
+                </p>
+                <p className={styles.price}>
+                  Rates from <strong>NGN30,000.00</strong>
+                </p>{" "}
+                <div className={styles.linkButton}>
+                  <LinkButton title='READ MORE' href='rooms' />
+                </div>
+              </div>
+            </div>{" "}
+          </SplideSlide>
+          <SplideSlide>
+            <div className={styles.slideWrapper}>
+              <div className={styles.imgWrapper}>
+                <Image src={Room} alt='room' />
+              </div>{" "}
+              <div className={styles.roomDetails}>
+                <h3 className={styles.roomType}>Superior Room</h3>
+                <p className={styles.roomDescription}>
+                  Our standard hotel room is a comfortable and affordable option
+                  for travelers. It features a cozy bed, a desk, and a private
+                  bathroom. Amenities include access to high-speed internet,
+                  cable TV, and a phone. Our standard room is the perfect choice
+                  for a relaxing and enjoyable stay.
+                </p>
+                <p className={styles.price}>
+                  Rates from <strong>NGN30,000.00</strong>
+                </p>{" "}
+                <div className={styles.linkButton}>
+                  <LinkButton title='READ MORE' href='rooms' />
+                </div>
+              </div>
+            </div>{" "}
+          </SplideSlide>
+          <SplideSlide>
+            <div className={styles.slideWrapper}>
+              <div className={styles.imgWrapper}>
+                <Image src={Room} alt='room' />
+              </div>{" "}
+              <div className={styles.roomDetails}>
+                <h3 className={styles.roomType}>Classic Room</h3>
+                <p className={styles.roomDescription}>
+                  Our standard hotel room is a comfortable and affordable option
+                  for travelers. It features a cozy bed, a desk, and a private
+                  bathroom. Amenities include access to high-speed internet,
+                  cable TV, and a phone. Our standard room is the perfect choice
+                  for a relaxing and enjoyable stay.
+                </p>
+                <p className={styles.price}>
+                  Rates from <strong>NGN30,000.00</strong>
+                </p>{" "}
+                <div className={styles.linkButton}>
+                  <LinkButton title='READ MORE' href='rooms' />
+                </div>
+              </div>
+            </div>{" "}
+          </SplideSlide>
+          <SplideSlide>
+            <div className={styles.slideWrapper}>
+              <div className={styles.imgWrapper}>
+                <Image src={Room} alt='room' />
+              </div>
+              <div className={styles.roomDetails}>
+                <h3 className={styles.roomType}>Executive Room</h3>
+                <p className={styles.roomDescription}>
+                  Our standard hotel room is a comfortable and affordable option
+                  for travelers. It features a cozy bed, a desk, and a private
+                  bathroom. Amenities include access to high-speed internet,
+                  cable TV, and a phone. Our standard room is the perfect choice
+                  for a relaxing and enjoyable stay.
+                </p>
+                <p className={styles.price}>
+                  Rates from <strong>NGN30,000.00</strong>
+                </p>
+                <div className={styles.linkButton}>
+                  <LinkButton title='READ MORE' href='rooms' />
+                </div>
+              </div>
+            </div>{" "}
+          </SplideSlide>
+          <SplideSlide>
+            <div className={styles.slideWrapper}>
+              <div className={styles.imgWrapper}>
+                <Image src={Room} alt='room' />
+              </div>{" "}
+              <div className={styles.roomDetails}>
+                <h3 className={styles.roomType}>Presidential Suites</h3>
+                <p className={styles.roomDescription}>
+                  Our standard hotel room is a comfortable and affordable option
+                  for travelers. It features a cozy bed, a desk, and a private
+                  bathroom. Amenities include access to high-speed internet,
+                  cable TV, and a phone. Our standard room is the perfect choice
+                  for a relaxing and enjoyable stay.
+                </p>
+                <p className={styles.price}>
+                  Rates from <strong>NGN30,000.00</strong>
+                </p>
+                <div className={styles.linkButton}>
+                  <LinkButton title='READ MORE' href='rooms' />
+                </div>
+              </div>
+            </div>{" "}
+          </SplideSlide>
+        </Splide>
         <div className={styles.linkButton}>
           <LinkButton title='EXPLORE' href='rooms' />
         </div>

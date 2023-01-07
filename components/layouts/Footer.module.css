@@ -30,7 +30,8 @@
 .detailsWrapper {
   color: white;
 }
-.royalCrest {
+.royalCrest,
+.hotelSuites {
   font-size: 0.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -39,14 +40,18 @@
   color: white;
 }
 .hotelSuites {
-  display: flex;
+  /* display: flex;
   font-size: 0.3rem;
   letter-spacing: 1.5em;
   font-weight: 700;
   margin: auto;
   margin-bottom: 1em;
-  color: white;
+  color: white; */
+  margin-bottom: 0.5em;
+
   text-align: center;
+  text-align: left;
+  font-weight: 300;
 }
 .addressContainer {
 }
@@ -136,7 +141,8 @@
   }
   .detailsWrapper {
   }
-  .royalCrest {
+  .royalCrest,
+  .hotelSuites {
     font-size: 0.7rem;
   }
   .hotelSuites {
@@ -167,7 +173,8 @@
   }
   .detailsWrapper {
   }
-  .royalCrest {
+  .royalCrest,
+  .hotelSuites {
     font-size: 0.83rem;
   }
   .hotelSuites {
@@ -216,7 +223,8 @@
   } */
   .detailsWrapper {
   }
-  .royalCrest {
+  .royalCrest,
+  .hotelSuites {
     font-size: 1.56rem;
   }
   .hotelSuites {

@@ -13,24 +13,33 @@
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
+.slideWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gainsboro;
+}
 .imgWrapper {
   position: relative;
 }
 .roomDetails {
-  background-color: var(--col-primary);
-  position: absolute;
+  /* background-color: var(--col-primary); */
+  /* position: absolute;
   left: 0;
-  bottom: 0;
-  padding: 0.2em;
+  bottom: 0; */
+  /* padding: 0.2em; */
   /* margin: 0.8em 0.2em; */
-  color: white;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  /* width: 100%; */
+  /* display: flex;
+  justify-content: space-between; */
+  padding: 40px 40px 60px;
 }
 .roomType,
 .price {
-  color: white;
+}
+.roomDescription {
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 .linkButton {
   margin-top: 1.2em;
@@ -46,6 +55,17 @@
   }
 }
 @media (min-width: 768px) {
+}
+@media (min-width: 900px) {
+  .slideWrapper {
+    flex-direction: row;
+  }
+  .slideWrapper > * {
+    flex-basis: 50%;
+  }
+  .roomDetails {
+    padding: 0 20px;
+  }
 }
 @media (min-width: 1024px) {
   .imgContainer {

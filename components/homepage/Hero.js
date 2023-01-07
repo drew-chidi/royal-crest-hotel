@@ -10,7 +10,7 @@ const Hero = () => {
       <Card>
         <div className={styles.welcomeBox}>
           <p className={styles.welcomep1}>WELCOME TO</p>
-          <h1 className={styles.welcomeHeading}>ROYAL CREST</h1>
+          <div className={styles.welcomeHeading}>ROYAL CREST</div>
           <p className={styles.welcomep2}>HOTELS</p>
           <p className={styles.welcomep3}>
             Book your stay and enjoy Luxury redefined at the most affordable

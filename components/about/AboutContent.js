@@ -4,15 +4,18 @@ import styles from "./AboutContent.module.css";
 
 const AboutContent = () => {
   return (
-    <Card>
-      <section>
-        <h2>ABOUT US</h2>
-        <p>
+    <section
+      id='section'
+      aria-label='facilities content'
+      className={styles.sectionContainer}
+    >
+      <Card>
+        <h2 className={styles.sectionHeader}>ABOUT US</h2>
+        <p className={styles.intro}>
           Welcome to the Royal Crest! Located in the heart of Lagos, our hotel
-          offers a blend of modern amenities and classic charm. With [Number]
-          guest rooms and suites, a restaurant and bar, a fitness center, and a
-          pool, we have everything you need for a comfortable and enjoyable
-          stay.
+          offers a blend of modern amenities and classic charm. With 34 guest
+          rooms and suites, a restaurant and bar, a fitness center, and a pool,
+          we have everything you need for a comfortable and enjoyable stay.
           <br />
           <br />
           Our guest rooms and suites are spacious and well-appointed, with
@@ -59,8 +62,8 @@ const AboutContent = () => {
             </p>
           </div>
         </div>
-      </section>
-    </Card>
+      </Card>
+    </section>
   );
 };
 
