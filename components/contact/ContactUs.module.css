@@ -13,6 +13,11 @@
   flex-direction: column;
   text-align: left;
 }
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 .details {
   font-size: 0.5rem;
   font-weight: 400;
@@ -73,6 +78,7 @@
   .contactWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
     /* flex-direction: row;
     justify-content: space-between; */
   }

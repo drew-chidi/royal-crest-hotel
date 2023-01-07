@@ -26,10 +26,10 @@
   content: "";
   position: absolute;
   z-index: 1;
-  top: -9px;
-  left: calc(50% - 9px);
-  width: 18px;
-  height: 18px;
+  top: -5px;
+  left: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
   background-color: goldenrod;
   border: 1px solid rgb(48, 49, 51);
   border-radius: 50%;
@@ -44,5 +44,11 @@
 @media (min-width: 1280px) {
   .dividerWrapper {
     margin-top: 5em;
+  }
+  .divDot:after {
+    width: 18px;
+    height: 18px;
+    top: -9px;
+    left: calc(50% - 9px);
   }
 }
