@@ -2,24 +2,21 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Room from "../../assets/images/room-home.svg";
+import Standard from "../../assets/images/hotel-standard-room.jpg";
 import Card from "../ui/Card";
 import LinkButton from "../ui/LinkButton";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Button from "../ui/Button";
-import Gym from "../../assets/images/gym.svg";
-import Pool from "../../assets/images/pool.svg";
-import Spa from "../../assets/images/spa.svg";
-import Restaurant from "../../assets/images/restaurant.svg";
-import Laundry from "../../assets/images/laundry.svg";
 import "@splidejs/react-splide/css";
 import styles from "./Rooms.module.css";
+import SectionDivider from "../ui/SectionDivider";
 
 const Rooms = () => {
   return (
     <section className={styles.roomContainer}>
       <Card>
-        <h2 className={styles.title}>Royal Crest Rooms</h2>
+        <h2 className={styles.title}>Royal Crest Accommodations</h2>
         <p className={styles.intro}>
           Our beautifully appointed rooms are the perfect retreat after a day of
           exploration or business. Each room features a comfortable bed dressed
@@ -93,7 +90,7 @@ const Rooms = () => {
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Room} alt='room' />
+                <Image src={Standard} alt='room' />
               </div>{" "}
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Superior Room</h3>
@@ -139,7 +136,7 @@ const Rooms = () => {
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Room} alt='room' />
+                <Image src={Standard} alt='room' />
               </div>
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Executive Room</h3>
@@ -183,9 +180,7 @@ const Rooms = () => {
             </div>{" "}
           </SplideSlide>
         </Splide>
-        <div className={styles.linkButton}>
-          <LinkButton title='EXPLORE' href='rooms' />
-        </div>
+        <SectionDivider />
       </Card>
     </section>
   );

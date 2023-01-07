@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Card from "../ui/Card";
 import LinkButton from "../ui/LinkButton";
+import SectionDivider from "../ui/SectionDivider";
 import styles from "./About.module.css";
 
 const About = () => {
@@ -18,6 +19,7 @@ const About = () => {
           </p>
           <LinkButton title='Learn more' href='about' />
         </div>
+        <SectionDivider />
       </Card>
     </section>
   );

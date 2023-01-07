@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineContacts } from "react-icons/ai";
+import { CgScrollV } from "react-icons/cg";
 import Button from "../ui/Button";
 import Card from "../ui/Card";
 import styles from "./Hero.module.css";
@@ -19,6 +20,10 @@ const Hero = () => {
             Enjoy luxury redefined at the most affordable rates
           </p>
           <Button title='BOOK NOW' iconName='book' />
+          <div className={styles.scrollWrapper}>
+            <p className={styles.scroll}>Scroll</p>
+            <CgScrollV className={styles.icon} />
+          </div>
         </div>
       </Card>
     </div>

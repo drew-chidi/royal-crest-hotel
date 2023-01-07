@@ -2,6 +2,10 @@
   margin-bottom: 23px;
   text-align: left;
 }
+.contentWrapper {
+  border-bottom: 1px solid var(--col-primary);
+  padding-bottom: 1em;
+}
 .title {
   margin-top: 1.4em;
   margin-bottom: 0.4em;
@@ -17,6 +21,11 @@
     margin-bottom: 29px;
   }
 }
+@media (min-width: 600px) {
+  .contentWrapper {
+    padding-bottom: 2em;
+  }
+}
 @media (min-width: 768px) {
   .aboutContainer {
     margin-bottom: 46px;
@@ -30,6 +39,9 @@
 @media (min-width: 1280px) {
   .aboutContainer {
     margin-bottom: 77px;
+  }
+  .contentWrapper {
+    padding-bottom: 3em;
   }
 }
 @media (min-width: 1920px) {

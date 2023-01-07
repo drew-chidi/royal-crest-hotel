@@ -61,6 +61,14 @@
 .buttonTitle {
   color: white;
 }
+.scrollWrapper {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 1em;
+}
+.scroll {
+  color: white;
+}
 
 @media (min-width: 375px) {
   .welcomeHeading {
@@ -90,6 +98,9 @@
   }
   .welcomep2 {
     font-size: 1.2rem;
+  }
+  .scrollWrapper {
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 768px) {
@@ -142,6 +153,9 @@
     font-size: 6.4rem;
   }
   .welcomep2 {
+    font-size: 2.5rem;
+  }
+  .scrollWrapper {
     font-size: 2.5rem;
   }
 }

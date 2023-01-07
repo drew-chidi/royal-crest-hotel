@@ -12,6 +12,7 @@ import "@splidejs/react-splide/css";
 import styles from "./Facilities.module.css";
 
 import LinkButton from "../ui/LinkButton";
+import SectionDivider from "../ui/SectionDivider";
 const Facilities = () => {
   return (
     <section id='about' className={styles.sectionContainer}>
@@ -68,6 +69,7 @@ const Facilities = () => {
         <div className={styles.linkButton}>
           <LinkButton title='Learn more' href='facilities' />
         </div>
+        <SectionDivider />
       </Card>
     </section>
   );
