@@ -27,9 +27,19 @@ const Facilities = () => {
         </div>
         <Splide
           options={{
-            perPage: 3,
+            mediaQuery: "min",
+            perMove: 1,
+            perPage: 1,
             gap: "1rem",
             pagination: false,
+            breakpoints: {
+              600: {
+                perPage: 2,
+              },
+              1024: {
+                perPage: 3,
+              },
+            },
           }}
           aria-label='facilities slide'
         >
