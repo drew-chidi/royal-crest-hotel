@@ -41,7 +41,7 @@ const AboutContent = () => {
         <div className={styles.missionVision}>
           <div className={styles.missionWrapper}>
             <h3>Mission</h3>
-            <p>
+            <p className={styles.description}>
               Our mission is to be a leader in the hospitality industry, setting
               the standard for excellence in service, comfort, and convenience.
               We are dedicated to creating a welcoming and comfortable
@@ -52,7 +52,7 @@ const AboutContent = () => {
           </div>
           <div className={styles.visionWrapper}>
             <h3>Vision</h3>
-            <p>
+            <p className={styles.description}>
               Our vision is to be the go-to destination for travelers seeking a
               unique and memorable experience. We strive to create a
               one-of-a-kind atmosphere and to offer a range of services and
