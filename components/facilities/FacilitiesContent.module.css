@@ -27,19 +27,19 @@
   .sectionContainer {
     padding-bottom: 70px;
   }
-  .itemBox .imgWrapper {
+  .itemBox:hover .imgWrapper {
     transform: rotate(-6deg);
     transition-duration: 0.6s;
   }
-  .itemBoxReverse .imgWrapper {
+  .itemBoxReverse:hover .imgWrapper {
     transform: rotate(6deg);
     transition-duration: 0.6s;
   }
-  .itemBoxReverse:hover .imgWrapper {
+  .itemBoxReverse .imgWrapper {
     transform: rotate(0deg);
     transition-duration: 0.6s;
   }
-  .itemBox:hover .imgWrapper {
+  .itemBox .imgWrapper {
     transform: rotate(0deg);
     transition-duration: 0.6s;
   }
@@ -48,12 +48,14 @@
     gap: 8px;
     row-gap: 16px;
     align-items: center;
+    margin-bottom: 2em;
   }
   .itemBoxReverse {
     display: flex;
     flex-direction: row-reverse;
     gap: 8px;
     row-gap: 16px;
+    margin-bottom: 2em;
     align-items: center;
   }
   .itemBox > .contentGroup {

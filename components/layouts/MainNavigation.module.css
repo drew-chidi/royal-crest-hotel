@@ -1,7 +1,4 @@
 .navigationContainer {
-  /* display: flex;
-  justify-content: space-between;
-  background-color: transparent; */
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -25,28 +22,26 @@
   padding: 1em 0.5em;
 }
 .hotelName {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   letter-spacing: 0.15em;
   line-height: 1.2;
   color: var(--col-primary);
 }
 .hotel {
-  font-size: 0.2rem;
+  font-size: 0.5rem;
   line-height: 1.2;
   letter-spacing: 0.6em;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 0em;
 }
 .menu {
   font-size: 1rem;
   color: var(--col-secondary);
-  /* position: relative; */
   z-index: 3;
   background-color: transparent;
   outline: none;
   border: 0;
   padding: 0;
-  /* right: 4.8em; */
 }
 .navLinksWrapperMobile {
   position: fixed;
@@ -72,9 +67,6 @@
 .navItem:hover,
 .navItem:active {
   text-decoration: underline;
-  /* text-decoration: underline;
-  text-decoration-color: var(--col-secondary);
-  -webkit-text-decoration-color: var(--col-secondary); */
 }
 
 .navLinksWrapperLg {
@@ -116,19 +108,11 @@
     list-style: none;
   }
 }
-
-@media (min-width: 1920px) {
-  .navigationContainer {
-    padding: 0 6.25em;
+@media (min-width: 1280px) {
+  .hotel {
+    font-size: 0.625rem;
   }
   .hotelName {
-    font-size: 2.5rem;
-  }
-  .hotel {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0.6em;
-    text-align: left;
+    font-size: 1rem;
   }
 }
