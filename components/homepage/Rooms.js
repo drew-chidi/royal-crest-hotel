@@ -3,14 +3,15 @@ import Link from "next/link";
 import React from "react";
 import Room from "../../assets/images/room-home.svg";
 import Standard from "../../assets/images/hotel-standard-room.jpg";
+import Classic from "../../assets/images/classic-room.jpg";
+import Deluxe from "../../assets/images/standard-hotel-room.jpg";
 import Card from "../ui/Card";
 import LinkButton from "../ui/LinkButton";
-
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Button from "../ui/Button";
 import "@splidejs/react-splide/css";
-import styles from "./Rooms.module.css";
 import SectionDivider from "../ui/SectionDivider";
+import styles from "./Rooms.module.css";
 
 const Rooms = () => {
   return (
@@ -49,25 +50,13 @@ const Rooms = () => {
         <Splide
           options={{
             pagination: false,
-            // autoplay: true,
-            // heightRatio: 0.6,
-            // mediaQuery: "min",
-            // breakpoints: {
-            //   600: {
-            //     heightRatio: 0.5,
-            //   },
-            // },
           }}
           aria-label='facilities slide'
         >
-          {/* <div class='splide__arrows '>
-            <button class='splide__arrow splide__arrow--prev '>Prev</button>
-            <button class='splide__arrow splide__arrow--next'>Next</button>
-          </div> */}
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Room} alt='room' />
+                <Image src={Classic} alt='room' />
               </div>{" "}
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Standard Room</h3>
@@ -113,7 +102,7 @@ const Rooms = () => {
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Room} alt='room' />
+                <Image src={Deluxe} alt='room' />
               </div>{" "}
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Classic Room</h3>
@@ -136,7 +125,7 @@ const Rooms = () => {
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Standard} alt='room' />
+                <Image src={Room} alt='room' />
               </div>
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Executive Room</h3>
@@ -159,7 +148,7 @@ const Rooms = () => {
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Room} alt='room' />
+                <Image src={Classic} alt='room' />
               </div>{" "}
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Presidential Suites</h3>

@@ -26,10 +26,8 @@
   --f-body-sm: 0.75rem;
   /* --f-body-tab-sm: 0.5rem; */
   --f-body-tab: 0.875rem;
-  --f-body-tab-l: 1rem;
   --f-body-xl: 1rem;
   /* --f-body-xxl: 1.17rem; */
-  --f-body-xxxl: 1rem;
 
   /* The ones I used initially */
   /* --f-body-sm: 0.4rem;
@@ -240,7 +238,7 @@ p {
   p,
   button,
   label {
-    font-size: var(--f-body-l);
+    font-size: var(--f-body-xl);
   }
 }
 @media (min-width: 1280px) {
@@ -268,30 +266,9 @@ p {
   p,
   button,
   label {
-    font-size: var(--f-body-xxl);
+    font-size: var(--f-body-xl);
   }
 }
-@media (min-width: 1920px) {
-  h1 {
-    font-size: var(--f-h1-xxxl);
-    font-weight: 700;
-  }
-  p,
-  button,
-  label {
-    font-size: var(--f-body-xxxl);
-  }
-}
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */
 
 /* Facility Page Hero Carousel */
 

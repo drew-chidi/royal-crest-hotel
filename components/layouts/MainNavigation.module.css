@@ -68,6 +68,9 @@
 .navItem:active {
   text-decoration: underline;
 }
+.linkItem {
+  font-size: 1rem;
+}
 
 .navLinksWrapperLg {
   display: none;
@@ -108,7 +111,16 @@
     list-style: none;
   }
 }
+@media (min-width: 1024px) {
+  .navLinksWrapperLg {
+    width: 53%;
+  }
+}
+
 @media (min-width: 1280px) {
+  .navLinksWrapperLg {
+    width: 42%;
+  }
   .hotel {
     font-size: 0.625rem;
   }
