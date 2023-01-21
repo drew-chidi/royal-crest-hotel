@@ -1,12 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Room from "../../assets/images/room-home.svg";
 import Standard from "../../assets/images/hotel-standard-room.jpg";
 import Classic from "../../assets/images/classic-room.jpg";
 import Deluxe from "../../assets/images/standard-hotel-room.jpg";
 import Card from "../ui/Card";
-import LinkButton from "../ui/LinkButton";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Button from "../ui/Button";
 import "@splidejs/react-splide/css";
@@ -24,29 +22,8 @@ const Rooms = () => {
           in luxurious linens, a flat screen TV, and a private bathroom stocked
           with plush towels and premium toiletries. Stay connected with
           complimentary WiFi, or relax with a cup of coffee or tea from the
-          in-room coffee maker.{" "}
+          in-room coffee maker.
         </p>
-        {/* <div className={styles.imgContainer}>
-          <div className={styles.imgWrapper}>
-            <Image src={Room} alt='room' />
-            <div className={styles.roomDetails}>
-              <p className={styles.roomType}>Standard Room</p>
-              <p className={styles.price}>NGN 30,000/Night</p>
-            </div>
-          </div>
-          <div className={styles.imgWrapper}>
-            <Image src={Room} alt='room' />
-            <p className={styles.roomDetails}>NGN 30,000/Night</p>
-          </div>
-          <div className={styles.imgWrapper}>
-            <Image src={Room} alt='room' />
-            <p className={styles.roomDetails}>NGN 30,000/Night</p>
-          </div>
-          <div className={styles.imgWrapper}>
-            <Image src={Room} alt='room' />
-            <p className={styles.roomDetails}>NGN 30,000/Night</p>
-          </div>
-        </div> */}
         <Splide
           options={{
             pagination: false,
@@ -57,9 +34,9 @@ const Rooms = () => {
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
                 <Image src={Classic} alt='room' />
-              </div>{" "}
+              </div>
               <div className={styles.roomDetails}>
-                <h3 className={styles.roomType}>Standard Room</h3>
+                <h3 className={styles.roomType}>Studio Room</h3>
                 <p className={styles.roomDescription}>
                   Our standard hotel room is a comfortable and affordable option
                   for travelers. It features a cozy bed, a desk, and a private
@@ -68,10 +45,10 @@ const Rooms = () => {
                   for a relaxing and enjoyable stay.
                 </p>
                 <p className={styles.price}>
-                  Rates from <strong>NGN30,000.00</strong>
+                  Rates from <strong>NGN18,000.00</strong>
                 </p>{" "}
                 <div className={styles.linkButton}>
-                  <LinkButton title='READ MORE' href='rooms' />
+                  <Button title='Read more' href='rooms' />
                 </div>
               </div>
             </div>{" "}
@@ -80,29 +57,6 @@ const Rooms = () => {
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
                 <Image src={Standard} alt='room' />
-              </div>{" "}
-              <div className={styles.roomDetails}>
-                <h3 className={styles.roomType}>Superior Room</h3>
-                <p className={styles.roomDescription}>
-                  Our standard hotel room is a comfortable and affordable option
-                  for travelers. It features a cozy bed, a desk, and a private
-                  bathroom. Amenities include access to high-speed internet,
-                  cable TV, and a phone. Our standard room is the perfect choice
-                  for a relaxing and enjoyable stay.
-                </p>
-                <p className={styles.price}>
-                  Rates from <strong>NGN30,000.00</strong>
-                </p>{" "}
-                <div className={styles.linkButton}>
-                  <LinkButton title='READ MORE' href='rooms' />
-                </div>
-              </div>
-            </div>{" "}
-          </SplideSlide>
-          <SplideSlide>
-            <div className={styles.slideWrapper}>
-              <div className={styles.imgWrapper}>
-                <Image src={Deluxe} alt='room' />
               </div>{" "}
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Classic Room</h3>
@@ -114,10 +68,33 @@ const Rooms = () => {
                   for a relaxing and enjoyable stay.
                 </p>
                 <p className={styles.price}>
-                  Rates from <strong>NGN30,000.00</strong>
+                  Rates from <strong>NGN20,000.00</strong>
+                </p>
+                <div className={styles.linkButton}>
+                  <Button title='Read more' href='rooms' />
+                </div>
+              </div>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className={styles.slideWrapper}>
+              <div className={styles.imgWrapper}>
+                <Image src={Deluxe} alt='room' />
+              </div>{" "}
+              <div className={styles.roomDetails}>
+                <h3 className={styles.roomType}>Deluxe Room</h3>
+                <p className={styles.roomDescription}>
+                  Our standard hotel room is a comfortable and affordable option
+                  for travelers. It features a cozy bed, a desk, and a private
+                  bathroom. Amenities include access to high-speed internet,
+                  cable TV, and a phone. Our standard room is the perfect choice
+                  for a relaxing and enjoyable stay.
+                </p>
+                <p className={styles.price}>
+                  Rates from <strong>NGN27,000.00</strong>
                 </p>{" "}
                 <div className={styles.linkButton}>
-                  <LinkButton title='READ MORE' href='rooms' />
+                  <Button title='Read more' href='rooms' />
                 </div>
               </div>
             </div>{" "}
@@ -128,7 +105,7 @@ const Rooms = () => {
                 <Image src={Room} alt='room' />
               </div>
               <div className={styles.roomDetails}>
-                <h3 className={styles.roomType}>Executive Room</h3>
+                <h3 className={styles.roomType}>Premium Room</h3>
                 <p className={styles.roomDescription}>
                   Our standard hotel room is a comfortable and affordable option
                   for travelers. It features a cozy bed, a desk, and a private
@@ -140,7 +117,7 @@ const Rooms = () => {
                   Rates from <strong>NGN30,000.00</strong>
                 </p>
                 <div className={styles.linkButton}>
-                  <LinkButton title='READ MORE' href='rooms' />
+                  <Button title='Read more' href='rooms' />
                 </div>
               </div>
             </div>{" "}
@@ -151,7 +128,7 @@ const Rooms = () => {
                 <Image src={Classic} alt='room' />
               </div>{" "}
               <div className={styles.roomDetails}>
-                <h3 className={styles.roomType}>Presidential Suites</h3>
+                <h3 className={styles.roomType}>Diplomatic Suite</h3>
                 <p className={styles.roomDescription}>
                   Our standard hotel room is a comfortable and affordable option
                   for travelers. It features a cozy bed, a desk, and a private
@@ -160,13 +137,13 @@ const Rooms = () => {
                   for a relaxing and enjoyable stay.
                 </p>
                 <p className={styles.price}>
-                  Rates from <strong>NGN30,000.00</strong>
+                  Rates from <strong>NGN60,000.00</strong>
                 </p>
                 <div className={styles.linkButton}>
-                  <LinkButton title='READ MORE' href='rooms' />
+                  <Button title='Read more' href='rooms' />
                 </div>
               </div>
-            </div>{" "}
+            </div>
           </SplideSlide>
         </Splide>
         <SectionDivider />

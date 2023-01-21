@@ -29,6 +29,7 @@ const Hero = ({ page }) => {
         <Splide
           options={{
             pagination: false,
+            lazyLoad: "sequential",
             autoplay: true,
             cover: true,
             heightRatio: 0.6,
@@ -44,19 +45,44 @@ const Hero = ({ page }) => {
           aria-label='facilities slide'
         >
           <SplideSlide>
-            <Image src={Restaurant} alt='restaurant' className={styles.img} />
+            <Image
+              src={Restaurant}
+              alt='restaurant'
+              className={styles.img}
+              data-splide-lazy={Restaurant}
+            />
           </SplideSlide>
           <SplideSlide>
-            <Image src={Gym} alt='gym' className={styles.img} />
+            <Image
+              src={Gym}
+              alt='gym'
+              className={styles.img}
+              data-splide-lazy={Gym}
+            />
           </SplideSlide>
           <SplideSlide>
-            <Image src={Pool} alt='pool' className={styles.img} />
+            <Image
+              src={Pool}
+              alt='pool'
+              className={styles.img}
+              data-splide-lazy={Pool}
+            />
           </SplideSlide>
           <SplideSlide>
-            <Image src={Laundry} alt='dry cleaning' className={styles.img} />
+            <Image
+              src={Laundry}
+              alt='dry cleaning'
+              className={styles.img}
+              data-splide-lazy={Laundry}
+            />
           </SplideSlide>
           <SplideSlide>
-            <Image src={Spa} alt='spa' className={styles.img} />
+            <Image
+              src={Spa}
+              alt='spa'
+              className={styles.img}
+              data-splide-lazy={Spa}
+            />
           </SplideSlide>
         </Splide>
       )}
@@ -71,7 +97,7 @@ const Hero = ({ page }) => {
             <br />
             Enjoy luxury redefined at the most affordable rates
           </p>
-          <Button title='BOOK NOW' iconName='book' />
+          <Button title='Book now' href='#contacts' />
           <div className={styles.scrollWrapper}>
             <p className={styles.scroll}>Scroll</p>
             <CgScrollV className={styles.icon} />

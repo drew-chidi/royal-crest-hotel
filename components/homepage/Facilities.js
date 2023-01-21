@@ -10,9 +10,9 @@ import Laundry from "../../assets/images/laundry.svg";
 import { FacilitiesData } from "../../data/facilities-data";
 import "@splidejs/react-splide/css";
 import styles from "./Facilities.module.css";
-
-import LinkButton from "../ui/LinkButton";
 import SectionDivider from "../ui/SectionDivider";
+import Button from "../ui/Button";
+
 const Facilities = () => {
   return (
     <section id='about' className={styles.sectionContainer}>
@@ -20,10 +20,12 @@ const Facilities = () => {
         <div className={styles.titleWrapper}>
           <h2 className={styles.title}>Our Facilities</h2>
           <p className={styles.intro}>
-            Welcome to our hotel! We are a family-owned and operated business
-            that has been serving travelers for over 50 years. Our goal is to
-            provide our guests with comfortable accommodations, excellent
-            service, and a memorable stay.
+            Our hotel offers a wide range of options to suit every need, from
+            luxurious guest rooms to on-site dining and recreational facilities.
+            Whether you are traveling for business or leisure, we are dedicated
+            to providing you with a memorable and enjoyable experience. Browse
+            through our facilities and discover all that our hotel has to offer.
+            We look forward to hosting you soon!
           </p>
         </div>
         <Splide
@@ -67,7 +69,7 @@ const Facilities = () => {
           </SplideSlide>
         </Splide>
         <div className={styles.linkButton}>
-          <LinkButton title='Learn more' href='facilities' />
+          <Button title='Learn more' href='facilities' />
         </div>
         <SectionDivider />
       </Card>

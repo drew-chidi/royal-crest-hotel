@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import Button from "../ui/Button";
 import Card from "../ui/Card";
-import LinkButton from "../ui/LinkButton";
 import SectionDivider from "../ui/SectionDivider";
 import styles from "./About.module.css";
 
@@ -17,7 +17,7 @@ const About = () => {
             provide our guests with comfortable accommodations, excellent
             service, and a memorable stay.
           </p>
-          <LinkButton title='Learn more' href='about' />
+          <Button title='Learn more' href='about' />
         </div>
         <SectionDivider />
       </Card>

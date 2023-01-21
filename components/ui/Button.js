@@ -1,17 +1,18 @@
 import React from "react";
-import { AiOutlineContacts } from "react-icons/ai";
+import Link from "next/link";
 import styles from "./Button.module.css";
 
-const Button = ({ title, iconName }) => {
+const Button = ({ title, href }) => {
   return (
     <div className={styles.buttonContainer}>
       <button className={styles.button}>
-        {iconName && (
-          <span className={styles.icon}>
-            <AiOutlineContacts />
-          </span>
+        {href ? (
+          <Link href={`/${href}`} className={styles.title}>
+            {title}
+          </Link>
+        ) : (
+          <span className={styles.title}>{title}</span>
         )}
-        <span className={styles.title}>{title}</span>
       </button>
     </div>
   );
