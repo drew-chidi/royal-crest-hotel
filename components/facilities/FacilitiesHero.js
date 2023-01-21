@@ -17,6 +17,7 @@ const FacilitiesHero = () => {
       <div className={styles.heroContainer}>
         <Splide
           options={{
+            lazyLoad: true,
             pagination: false,
             autoplay: true,
             cover: true,
@@ -29,8 +30,6 @@ const FacilitiesHero = () => {
             },
             speed: 0,
             type: "loop",
-            // rewind: true,
-            // rewindSpeed: 500,
           }}
           aria-label='facilities slide'
         >
@@ -50,20 +49,6 @@ const FacilitiesHero = () => {
             <Image src={Spa} alt='spa' className={styles.img} />
           </SplideSlide>
         </Splide>
-        {/* <Card>
-          <div className={styles.welcomeBox}>
-            <p className={styles.welcomep1}>WELCOME TO</p>
-            <h1 className={styles.welcomeHeading}>ROYAL CREST</h1>
-            <p className={styles.welcomep2}>HOTELS</p>
-            <p className={styles.welcomep3}>
-              Book your stay and enjoy Luxury redefined at the most affordable
-              rates.
-              <br />
-              Enjoy luxury redefined at the most affordable rates
-            </p>
-            <Button title='BOOK NOW' iconName='book' />
-          </div>
-        </Card> */}
       </div>
     </div>
   );

@@ -67,11 +67,6 @@
   font-weight: 700;
 }
 
-/* Dark mode for maps */
-.mapLocation iframe {
-  /* filter: invert(100%); */
-}
-
 @media (min-width: 768px) {
   .contactContainer {
     padding-bottom: 104px;

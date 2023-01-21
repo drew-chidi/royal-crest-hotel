@@ -10,13 +10,13 @@ import styles from "./RoomAmenities.module.css";
 const RoomAmenities = () => {
   return (
     <article>
-      <h3 className={styles.title}>Room Amenities</h3>
+      <h2 className={styles.title}>Room Amenities</h2>
       <div className={styles.amenitiesWrapper}>
         <div className={styles.amenities}>
           <div className={styles.imgWrapper}>
             <Image src={aircon} alt='coffee maker' />
           </div>
-          <h4>Coffee Maker</h4>
+          <h4 className={styles.amenitiesTitle}>Coffee Maker</h4>
           <p>Coffee and tea-making facility</p>
         </div>
         <div className={styles.amenities}>
@@ -47,13 +47,6 @@ const RoomAmenities = () => {
           <h4>Coffee Maker</h4>
           <p>Coffee and tea-making facility</p>
         </div>
-        {/* <div className={styles.amenities}>
-          <div className={styles.imgWrapper}>
-            <Image src={coffeeMaker} alt='coffee maker' />
-          </div>
-          <h4>Coffee Maker</h4>
-          <p>Coffee and tea-making facility</p>
-        </div> */}
       </div>
     </article>
   );

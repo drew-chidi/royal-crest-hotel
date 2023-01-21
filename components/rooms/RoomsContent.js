@@ -4,18 +4,19 @@ import Standard from "../../assets/images/room-home.svg";
 import Image from "next/image";
 import { BsPerson } from "react-icons/bs";
 import styles from "./RoomsContent.module.css";
-import Hero from "./Hero";
+import Hero from "../homepage/Hero";
 import ContactUs from "../contact/ContactUs";
 import RoomAmenities from "./RoomAmenities";
+import { GrHomeRounded } from "react-icons/gr";
 
 const RoomsContent = () => {
   return (
     <Fragment>
-      <Hero />
+      <Hero page='room' />
       <section>
         <Card>
           <div>
-            <h2 className={styles.sectionHeader}> ROOMS & RATES </h2>
+            <h1 className={styles.sectionHeader}> ROOMS & RATES </h1>
             <p className={styles.intro}>
               Here at Royal Crest, we offer a variety of comfortable and stylish
               guest rooms to suit your needs. Whether you are traveling for

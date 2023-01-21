@@ -3,16 +3,14 @@
   margin-bottom: 0.5em;
 }
 .amenitiesWrapper {
-  /* display: flex;
-  justify-content: center;
-  flex-wrap: wrap; */
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
   justify-items: center;
   row-gap: 2em;
+  margin-bottom: 2em;
 }
 .amenities h4 {
   text-align: center;
+  margin-top: 1em;
 }
 .imgWrapper {
   width: 80px;
