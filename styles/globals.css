@@ -6,38 +6,14 @@
 :root {
   --col-primary: rgba(20, 39, 74, 1);
   --col-secondary: #f8d084;
-  /* --f-h1-sm: 1.75rem; */
-  /* --f-h1-tab-sm: 1.2rem;
-  --f-h1-tab: 1.5rem;
-  --f-h1-tab-l: 1.76rem;
-  --f-h1-l: 2rem;
-  --f-h1-xl: 2.5rem;
-  --f-h1-xxl: 2.8rem;
-  --f-h1-xxxl: 3.75rem;
-  --f-body-sm: 0.75rem; */
   --f-h1-sm: 1.75rem;
-  /* --f-h1-tab-sm: 1.2rem; */
   --f-h1-tab: 2.25rem;
   --f-h1-tab-l: 2.5rem;
-  /* --f-h1-l: 2.5rem; */
   --f-h1-xl: 3.125rem;
-  /* --f-h1-xxl: 2.8rem; */
   --f-h1-xxxl: 3.75rem;
   --f-body-sm: 0.75rem;
-  /* --f-body-tab-sm: 0.5rem; */
   --f-body-tab: 0.875rem;
   --f-body-xl: 1rem;
-  /* --f-body-xxl: 1.17rem; */
-
-  /* The ones I used initially */
-  /* --f-body-sm: 0.4rem;
-  --f-body-tab-sm: 0.5rem;
-  --f-body-tab: 0.6rem;
-  --f-body-tab-l: 0.73rem;
-  --f-body-l: 0.83rem;
-  --f-body-xl: 1rem;
-  --f-body-xxl: 1.17rem;
-  --f-body-xxxl: 1.56rem; */
 }
 
 * {
@@ -193,7 +169,7 @@ p {
 }
 @media (min-width: 600px) {
   h1 {
-    font-size: var(--f-h1-tab-sm);
+    font-size: var(--f-h1-tab);
     font-weight: 700;
   }
   h2 {
@@ -210,7 +186,6 @@ p {
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: var(--f-h1-tab);
     font-weight: 700;
   }
   p,
@@ -232,7 +207,6 @@ p {
 }
 @media (min-width: 1024px) {
   h1 {
-    font-size: var(--f-h1-l);
     font-weight: 700;
   }
   p,

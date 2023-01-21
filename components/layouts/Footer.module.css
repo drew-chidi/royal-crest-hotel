@@ -23,234 +23,57 @@
   padding: 27.6px 0 14.4px 0;
 }
 .footerItemsWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8em 0 1em 0;
 }
+.socialsWrapper {
+  display: flex;
+  justify-content: center;
+}
+.socialsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+.socialList {
+  display: inline-flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
 .detailsWrapper {
   color: white;
 }
-.royalCrest,
-.hotelSuites {
-  font-size: 0.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.15em;
-  text-align: left;
+.royalCrest {
+  font-size: 0.875rem;
+  margin: 2em 0 1em 0;
   color: white;
-}
-.hotelSuites {
-  /* display: flex;
-  font-size: 0.3rem;
-  letter-spacing: 1.5em;
   font-weight: 700;
-  margin: auto;
-  margin-bottom: 1em;
-  color: white; */
-  margin-bottom: 0.5em;
-
   text-align: center;
-  text-align: left;
-  font-weight: 300;
 }
 .addressContainer {
+  margin-bottom: 1em;
 }
 .locationInfo {
-  font-size: 0.175rem;
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0em;
-  text-align: left;
   color: white;
+  text-align: center;
 }
-.linksWrapper,
-.socialsWrapper {
-  font-size: 0.2rem;
-  text-align: left;
-}
-.socialItem {
+.contactInfo {
   display: flex;
-  align-items: center;
-}
-.linkItem,
-.socialName {
-  font-weight: 400;
-  line-height: 1.9;
-  letter-spacing: 0em;
-  text-align: left;
-  color: white;
-}
-.linkItem,
-.socialIcon,
-.socialItem,
-.socialName {
-  font-size: inherit;
-}
-.socialIcon {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  /* padding: 0.5em; */
-}
-.socialName {
-  margin-left: 1.625em;
-}
-.socialTitle {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 3em;
 }
-
-@media (min-width: 480px) {
-  .footerContainer {
-    padding: 34.5px auto 18px auto;
-  }
-  .locationInfo {
-    font-size: 0.22rem;
-  }
-  .linksWrapper,
-  .socialsWrapper {
-    font-size: 0.25rem;
-    text-align: left;
-  }
+.contactIcon,
+.contactGroup {
+  margin-right: 0.3em;
 }
-@media (min-width: 600px) {
-  .footerContainer {
-    padding: 43.125px auto 22.5px auto;
-  }
-  .linksWrapper,
-  .socialsWrapper {
-    font-size: 0.3125rem;
-    text-align: left;
-  }
-}
-
-@media (min-width: 768px) {
-  .footerContainer {
-    padding: 55.2px auto 28.8px auto;
-  }
-  /* .footerItemsWrapper {
-    padding: 64px 0 26.4px 0;
-  } */
-  .footerItemsWrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-  }
-  .detailsWrapper {
-  }
-  .royalCrest,
-  .hotelSuites {
-    font-size: 0.7rem;
-  }
-  .hotelSuites {
-    font-size: 0.4rem;
-  }
-  .addressContainer {
-  }
-  .locationInfo {
-    font-size: 0.4rem;
-  }
-  .linksWrapper,
-  .socialsWrapper {
-    font-size: 0.4rem;
-  }
-}
-@media (min-width: 900px) {
-  .footerContainer {
-    padding: 64.86px auto 33.84px auto;
-  }
-  .linksWrapper,
-  .socialsWrapper {
-    font-size: 0.47rem;
-  }
-}
-@media (min-width: 1024px) {
-  .footerContainer {
-    padding: 73.14px 0 38.16px 0;
-  }
-  .detailsWrapper {
-  }
-  .royalCrest,
-  .hotelSuites {
-    font-size: 0.83rem;
-  }
-  .hotelSuites {
-    font-size: 0.6rem;
-  }
-  .addressContainer {
-  }
-  .locationInfo {
-    font-size: 0.46rem;
-  }
-  .linksWrapper,
-  .socialsWrapper {
-    font-size: 0.53rem;
-  }
-}
-@media (min-width: 1280px) {
-  .footerContainer {
-    padding: 92.46px 0 48.24px 0;
-  }
-  .locationInfo {
-    font-size: 0.59rem;
-  }
-  .linksWrapper,
-  .socialsWrapper {
-    font-size: 0.67rem;
-  }
-}
-@media (min-width: 1440px) {
-  .footerContainer {
-    padding: 103.5px 0 54px 0;
-  }
-  .locationInfo {
-    font-size: 0.66rem;
-  }
-  .linksWrapper,
-  .socialsWrapper {
-    font-size: 0.75rem;
-  }
-}
-@media (min-width: 1920px) {
-  .footerContainer {
-    padding: 138px 0 72px 0;
-  }
-  /* .footerItemsWrapper {
-    padding-top: 144px 0 66px 0;
-  } */
-  .detailsWrapper {
-  }
-  .royalCrest,
-  .hotelSuites {
-    font-size: 1.56rem;
-  }
-  .hotelSuites {
-    font-size: 0.6rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-  .addressContainer {
-  }
-  .locationInfo {
-    font-size: 0.875rem;
-  }
-  .footerLinksWrapper {
-  }
-  .linksWrapper,
-  .socialsWrapper {
-    font-size: 1rem;
-  }
-  .linkItem {
-  }
-  .socialsWrapper {
-  }
-  .socialsItem {
-  }
-  .socialIcon {
-  }
-  .socialTitle {
-  }
+.copyright {
+  color: white;
+  font-size: 0.75rem;
 }

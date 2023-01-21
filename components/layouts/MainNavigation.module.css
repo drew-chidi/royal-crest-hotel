@@ -121,6 +121,13 @@
   .navLinksWrapperLg {
     width: 42%;
   }
+  .navWrap {
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    width: 100%;
+    gap: 18em;
+  }
   .hotel {
     font-size: 0.625rem;
   }

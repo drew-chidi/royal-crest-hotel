@@ -66,7 +66,7 @@ const MainNavigation = () => {
                 <li className={styles.navItem}>
                   <Link
                     className={styles.linkItem}
-                    href='#contacts'
+                    href='/contact'
                     onClick={() => setMenuOpen(false)}
                   >
                     Contacts
@@ -99,7 +99,7 @@ const MainNavigation = () => {
                 </Link>
               </li>
               <li className={styles.navItemLg}>
-                <Link className={styles.linkItemLg} href='#contacts'>
+                <Link className={styles.linkItemLg} href='/contact'>
                   Contacts
                 </Link>
               </li>
