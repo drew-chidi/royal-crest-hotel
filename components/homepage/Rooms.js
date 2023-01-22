@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Room from "../../assets/images/room-home.svg";
-import Standard from "../../assets/images/hotel-standard-room.jpg";
-import Classic from "../../assets/images/classic-room.jpg";
+import Classic from "../../assets/images/hotel-standard-room.jpg";
+import Studio from "../../assets/images/classic-room.png";
 import Deluxe from "../../assets/images/standard-hotel-room.jpg";
 import Card from "../ui/Card";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -33,7 +33,7 @@ const Rooms = () => {
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Classic} alt='room' />
+                <Image src={Studio} alt='room' />
               </div>
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Studio Room</h3>
@@ -56,7 +56,7 @@ const Rooms = () => {
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Standard} alt='room' />
+                <Image src={Classic} alt='room' />
               </div>{" "}
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Classic Room</h3>

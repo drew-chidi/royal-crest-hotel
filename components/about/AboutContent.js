@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPhone } from "react-icons/fa";
 import Card from "../ui/Card";
 import styles from "./AboutContent.module.css";
 
@@ -10,7 +11,7 @@ const AboutContent = () => {
       className={styles.sectionContainer}
     >
       <Card>
-        <h2 className={styles.sectionHeader}>ABOUT US</h2>
+        <h1 className={styles.sectionHeader}>ABOUT US</h1>
         <p className={styles.intro}>
           Welcome to the Royal Crest! Located in the heart of Lagos, our hotel
           offers a blend of modern amenities and classic charm. With 34 guest
@@ -40,7 +41,7 @@ const AboutContent = () => {
         </p>
         <div className={styles.missionVision}>
           <div className={styles.missionWrapper}>
-            <h3>Mission</h3>
+            <h2>Mission</h2>
             <p className={styles.description}>
               Our mission is to be a leader in the hospitality industry, setting
               the standard for excellence in service, comfort, and convenience.
@@ -51,7 +52,7 @@ const AboutContent = () => {
             </p>
           </div>
           <div className={styles.visionWrapper}>
-            <h3>Vision</h3>
+            <h2>Vision</h2>
             <p className={styles.description}>
               Our vision is to be the go-to destination for travelers seeking a
               unique and memorable experience. We strive to create a
@@ -60,6 +61,47 @@ const AboutContent = () => {
               We want to be known as the hotel that goes above and beyond to
               create an exceptional and personalized experience for every guest.
             </p>
+          </div>
+          <div>
+            <div className={styles.locationHeading}>
+              <h2>Our Locations</h2>
+              {/* <span className={styles.clipArt}></span> */}
+            </div>
+            <div>
+              <p>Lagos Branch</p>
+              <address>
+                Royal Crest Hotel & Swites
+                <br />
+                No. 9 Osolo Way, 7 & 8 Bus Stop, <br />
+                Off Muritala Mohammed International Airport Road,
+                <br />
+                Lagos.
+              </address>
+              <div>
+                <FaPhone />
+                <p>0913 444 8666, 0913 444 7999</p>
+              </div>
+            </div>
+            <div>
+              <p>Port Harcourt Branch</p>
+              <address>
+                Royal Crest Hotel & Swites
+                <br />
+                No. 2, Divine Grace Close,
+                <br />
+                Slaughter Road, Trans Woji,
+                <br />
+                Port Harcourt.
+              </address>
+              <div>
+                <FaPhone />
+                <p>0802 879 3388, 0802 879 3570</p>
+              </div>
+            </div>
+            <div>
+              <h2>Our Locations</h2>
+              {/* <span></span> */}
+            </div>
           </div>
         </div>
       </Card>

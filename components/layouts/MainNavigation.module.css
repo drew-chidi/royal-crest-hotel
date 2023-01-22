@@ -17,15 +17,23 @@
   font-weight: 700;
   line-height: 1.2;
   background-color: var(--col-secondary);
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
-  padding: 1em 0.5em;
+  /* border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%; */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 0.5em 1em;
 }
 .hotelName {
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
+  font-size: 1rem;
   letter-spacing: 0.15em;
   line-height: 1.2;
   color: var(--col-primary);
+  /* font-family: "Seaweed Script", cursive; */
+  font-family: "Style Script", cursive;
+  text-align: center;
+  margin-bottom: 0.2em;
+  font-style: italic;
 }
 .hotel {
   font-size: 0.5rem;
@@ -33,6 +41,18 @@
   letter-spacing: 0.6em;
   text-align: center;
   margin-top: 0em;
+}
+.slogan {
+  font-size: 0.625rem;
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  color: white;
+  text-align: left;
+  font-family: "Style Script", cursive;
+  /* color: var(--col-secondary); */
+  font-style: italic;
+  letter-spacing: 0.3em;
 }
 .menu {
   font-size: 1rem;

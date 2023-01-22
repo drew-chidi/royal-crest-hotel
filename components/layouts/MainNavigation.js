@@ -33,9 +33,11 @@ const MainNavigation = () => {
     >
       <Card>
         <div className={styles.navWrap}>
-          <div className={styles.hotelLogoBox}>
-            <p className={styles.hotelName}>ROYAL CREST</p>
-            <p className={styles.hotel}>HOTELS</p>
+          <div>
+            <div className={styles.hotelLogoBox}>
+              <p className={styles.hotelName}>Royal Crest</p>
+              <p className={styles.hotel}>HOTELS & SUITES</p>
+            </div>
           </div>
           <button className={styles.menu} onClick={toggleHandler}>
             {!menuOpen ? <AiOutlineMenu /> : <AiOutlineClose />}
@@ -106,6 +108,7 @@ const MainNavigation = () => {
             </ul>
           </nav>
         </div>
+        <div className={styles.slogan}>...Step into Royalty</div>
       </Card>
     </div>
   );
