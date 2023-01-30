@@ -1,14 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import Room from "../../assets/images/room-home.svg";
-import Classic from "../../assets/images/hotel-standard-room.jpg";
-import Studio from "../../assets/images/classic-room.png";
-import Deluxe from "../../assets/images/standard-hotel-room.jpg";
+import Classic from "../../assets/images/studio-room.jpg";
+import Deluxe from "../../assets/images/deluxe-room.png";
+import Premium from "../../assets/images/deluxe-room.png";
+import Suite from "../../assets/images/deluxe-room.png";
+import Studio from "../../assets/images/studio-room.jpg";
 import Card from "../ui/Card";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Button from "../ui/Button";
-import "@splidejs/react-splide/css";
 import SectionDivider from "../ui/SectionDivider";
+import "@splidejs/react-splide/css";
 import styles from "./Rooms.module.css";
 
 const Rooms = () => {
@@ -33,7 +34,7 @@ const Rooms = () => {
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Studio} alt='room' />
+                <Image src={Studio} alt='studio room' />
               </div>
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Studio Room</h3>
@@ -102,7 +103,7 @@ const Rooms = () => {
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Room} alt='room' />
+                <Image src={Premium} alt='premium room' />
               </div>
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Premium Room</h3>
@@ -125,7 +126,7 @@ const Rooms = () => {
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
-                <Image src={Classic} alt='room' />
+                <Image src={Suite} alt='diplomatic suites' />
               </div>{" "}
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Diplomatic Suite</h3>

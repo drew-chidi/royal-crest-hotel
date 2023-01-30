@@ -80,7 +80,9 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.copyrightWrapper}>
-            <p className={styles.copyright}>&copy; Royal Crest Hotel</p>
+            <p className={styles.copyright}>
+              &copy; Royal Crest Hotel & Suites
+            </p>
           </div>
         </div>
       </Card>

@@ -16,6 +16,14 @@
 .aboutCardItem {
   margin-bottom: 2em;
   text-align: center;
+  background-color: #eee;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.aboutDescription {
+  padding: 0 1em 2em 1em;
 }
 .imgWrapper {
   margin-bottom: 1em;
@@ -34,6 +42,10 @@
 .locationColumns {
   margin-top: 1em;
   margin-bottom: 3.25em;
+}
+.locationWrapper {
+  background-color: #eee;
+  padding: 2em 0;
 }
 .locationWrapper,
 .visionWrapper,
@@ -98,10 +110,16 @@
   .sectionContainer {
     padding-bottom: 150px;
   }
+
   .aboutCard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
+  }
+  .description {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media (min-width: 1920px) {
