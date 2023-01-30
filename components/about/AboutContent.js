@@ -1,7 +1,9 @@
 import React from "react";
 import { FaPhone } from "react-icons/fa";
 import Card from "../ui/Card";
+import FrontDesk from "../../assets/images/reception-front-desk.jpg";
 import styles from "./AboutContent.module.css";
+import Image from "next/image";
 
 const AboutContent = () => {
   return (
@@ -17,7 +19,7 @@ const AboutContent = () => {
           offers a blend of modern amenities and classic charm. With 34 guest
           rooms and suites, a restaurant and bar, a fitness center, and a pool,
           we have everything you need for a comfortable and enjoyable stay.
-          <br />
+          {/* <br />
           <br />
           Our guest rooms and suites are spacious and well-appointed, with
           comfortable beds, high-speed internet, and flat-screen TVs. Some rooms
@@ -34,12 +36,52 @@ const AboutContent = () => {
           center and pool, which are open to all guests. We also offer a variety
           of services and amenities to make your stay even more comfortable,
           including a concierge, room service, and a 24-hour front desk.
-          <br />
+          <br /> */}
           <br />
           We look forward to welcoming you to the Royal Crest and making your
           stay with us a memorable one.
         </p>
-        <div className={styles.missionVision}>
+
+        <>
+          <div className={styles.aboutCard}>
+            <div className={styles.aboutCardItem}>
+              <div className={styles.imgWrapper}>
+                <Image src={FrontDesk} alt='about us' className={styles.img} />
+              </div>
+              <p>
+                We are a boutique hotel, 5 minutes from the Murtala Mohammed
+                International Airport, 7 minutes from MM2 and 10 minutes from
+                MM1
+                <br />
+                We parade an array of rooms and suites every discerning guest is
+                guaranteed to find appealing
+              </p>
+            </div>
+            <div className={styles.aboutCardItem}>
+              <div className={styles.imgWrapper}>
+                <Image src={FrontDesk} alt='about us' className={styles.img} />
+              </div>
+              <p>
+                Our boutique concept guarantees personalized service to all our
+                guests.
+                <br />
+                Our remodeled checking in desk is designed to have you seated
+                while you get the guest-friendly attention you rightly deserve.
+              </p>
+            </div>
+            <div className={styles.aboutCardItem}>
+              <div className={styles.imgWrapper}>
+                <Image src={FrontDesk} alt='about us' className={styles.img} />
+              </div>
+              <p>
+                Our faclities and services awaiting your delightsome experience
+                are a fully automated boardroom, restaurant and bar, among
+                others.
+              </p>
+            </div>
+          </div>
+        </>
+        <article className={styles.missionVision}>
           <div className={styles.missionWrapper}>
             <h2>Mission</h2>
             <p className={styles.description}>
@@ -51,7 +93,7 @@ const AboutContent = () => {
               preferences.
             </p>
           </div>
-          <div className={styles.visionWrapper}>
+          <article className={styles.visionWrapper}>
             <h2>Vision</h2>
             <p className={styles.description}>
               Our vision is to be the go-to destination for travelers seeking a
@@ -61,49 +103,54 @@ const AboutContent = () => {
               We want to be known as the hotel that goes above and beyond to
               create an exceptional and personalized experience for every guest.
             </p>
-          </div>
-          <div>
-            <div className={styles.locationHeading}>
-              <h2>Our Locations</h2>
-              {/* <span className={styles.clipArt}></span> */}
-            </div>
-            <div>
-              <p>Lagos Branch</p>
-              <address>
-                Royal Crest Hotel & Swites
-                <br />
-                No. 9 Osolo Way, 7 & 8 Bus Stop, <br />
-                Off Muritala Mohammed International Airport Road,
-                <br />
-                Lagos.
-              </address>
-              <div>
-                <FaPhone />
-                <p>0913 444 8666, 0913 444 7999</p>
+          </article>
+          <article className={styles.locationWrapper}>
+            <h2>Our Locations</h2>
+            <div className={styles.locationColumns}>
+              <div className={styles.locationItem}>
+                <h4 className={styles.branch}>Lagos Branch</h4>
+                <address className={styles.address}>
+                  Royal Crest Hotel & Swites
+                  <br />
+                  No. 9 Osolo Way, 7 & 8 Bus Stop, <br />
+                  Off Muritala Mohammed International Airport Road,
+                  {/* <br /> */}
+                  Lagos.
+                </address>
+                <div className={styles.contactPhone}>
+                  <FaPhone />
+                  <a href='tel: +2349134448666' className={styles.number}>
+                    0913 444 8666,
+                  </a>
+                  <a href='tel: +2349134447999' className={styles.number}>
+                    0913 444 7999
+                  </a>
+                </div>
+              </div>
+              <div className={styles.locationItem}>
+                <h4 className={styles.branch}>Port Harcourt Branch</h4>
+                <address className={styles.address}>
+                  Royal Crest Hotel & Swites
+                  <br />
+                  No. 2, Divine Grace Close,
+                  <br />
+                  Slaughter Road, Trans Woji,
+                  <br />
+                  Port Harcourt.
+                </address>
+                <div className={styles.contactPhone}>
+                  <FaPhone />
+                  <a href='tel: +2348028793388' className={styles.number}>
+                    0802 879 3388,
+                  </a>
+                  <a href='tel: +234802 879 3570' className={styles.number}>
+                    0802 879 3570
+                  </a>
+                </div>
               </div>
             </div>
-            <div>
-              <p>Port Harcourt Branch</p>
-              <address>
-                Royal Crest Hotel & Swites
-                <br />
-                No. 2, Divine Grace Close,
-                <br />
-                Slaughter Road, Trans Woji,
-                <br />
-                Port Harcourt.
-              </address>
-              <div>
-                <FaPhone />
-                <p>0802 879 3388, 0802 879 3570</p>
-              </div>
-            </div>
-            <div>
-              <h2>Our Locations</h2>
-              {/* <span></span> */}
-            </div>
-          </div>
-        </div>
+          </article>
+        </article>
       </Card>
     </section>
   );

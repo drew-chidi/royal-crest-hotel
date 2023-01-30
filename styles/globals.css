@@ -152,10 +152,11 @@ button {
   color: var(--col-primary);
 }
 p,
-label {
+label,
+address {
   font-size: 0.875rem;
-  /* font-size: 0.312rem; */
   color: var(--col-primary);
+  line-height: 1.5;
 }
 p {
   line-height: 1.5;
@@ -163,7 +164,8 @@ p {
 @media (min-width: 480px) {
   p,
   button,
-  label {
+  label,
+  address {
     font-size: var(--f-body-sm);
     /* font-size: 0.4rem; */
   }
@@ -181,7 +183,8 @@ p {
   }
   p,
   button,
-  label {
+  label,
+  address {
     font-size: var(--f-body-tab);
   }
 }
@@ -202,7 +205,8 @@ p {
   }
   p,
   button,
-  label {
+  label,
+  address {
     font-size: var(--f-body-tab-l);
   }
 }
@@ -212,7 +216,8 @@ p {
   }
   p,
   button,
-  label {
+  label,
+  address {
     font-size: var(--f-body-xl);
   }
 }

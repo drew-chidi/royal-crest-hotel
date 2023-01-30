@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Logo from "../../assets/images/royal-crest-logo.png";
 import Card from "../ui/Card";
 
 import styles from "./MainNavigation.module.css";
@@ -35,9 +37,12 @@ const MainNavigation = () => {
         <div className={styles.navWrap}>
           <div>
             <div className={styles.hotelLogoBox}>
-              <p className={styles.hotelName}>Royal Crest</p>
-              <p className={styles.hotel}>HOTELS & SUITES</p>
+              <Image src={Logo} alt='company logo' />
+
+              {/* <p className={styles.hotelName}>Royal Crest</p>
+              <p className={styles.hotel}>HOTELS & SUITES</p> */}
             </div>
+            <div className={styles.slogan}>...Step into Royalty</div>
           </div>
           <button className={styles.menu} onClick={toggleHandler}>
             {!menuOpen ? <AiOutlineMenu /> : <AiOutlineClose />}
@@ -108,7 +113,6 @@ const MainNavigation = () => {
             </ul>
           </nav>
         </div>
-        <div className={styles.slogan}>...Step into Royalty</div>
       </Card>
     </div>
   );
