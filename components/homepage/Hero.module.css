@@ -1,10 +1,12 @@
 .heroContainer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.53)),
-    url("../../assets/images/hero-hotel-bg.png");
+    url("../../assets/images/royal-crest-building.jpeg");
   color: rgba(255, 255, 255, 1);
   font-family: "Montserrat", sans-serif;
   text-align: left;
   padding-bottom: 44.8px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bgImageRoom {
   background-repeat: no-repeat;

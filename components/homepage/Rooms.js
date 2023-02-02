@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import Classic from "../../assets/images/studio-room.jpg";
-import Deluxe from "../../assets/images/deluxe-room.png";
-import Premium from "../../assets/images/deluxe-room.png";
-import Suite from "../../assets/images/deluxe-room.png";
+import Classic from "../../assets/images/deluxe-room-2.jpeg";
+import Deluxe from "../../assets/images/deluxe-room-1.jpeg";
+import Premium from "../../assets/images/premium-room.jpg";
+import Suite from "../../assets/images/deluxe-room.jpeg";
 import Studio from "../../assets/images/studio-room.jpg";
 import Card from "../ui/Card";
 import { Splide, SplideSlide } from "@splidejs/react-splide";

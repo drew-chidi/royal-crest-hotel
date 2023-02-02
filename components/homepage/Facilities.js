@@ -3,11 +3,13 @@ import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Card from "../ui/Card";
 import Gym from "../../assets/images/gym.svg";
+import Board from "../../assets/images/board-room.jpeg";
+import Reception from "../../assets/images/reception-area.jpeg";
+import Room from "../../assets/images/deluxe-room.jpeg";
 import Pool from "../../assets/images/pool.svg";
 import Spa from "../../assets/images/spa.svg";
 import Restaurant from "../../assets/images/restaurant.svg";
 import Laundry from "../../assets/images/laundry.svg";
-import { FacilitiesData } from "../../data/facilities-data";
 import "@splidejs/react-splide/css";
 import styles from "./Facilities.module.css";
 import SectionDivider from "../ui/SectionDivider";
@@ -48,25 +50,30 @@ const Facilities = () => {
         >
           <SplideSlide>
             <Image
-              src={Restaurant}
-              alt='restaurant'
+              src={Board}
+              alt='board room'
               width={500}
               height={500}
               className={styles.img}
             />
           </SplideSlide>
           <SplideSlide>
-            <Image src={Gym} alt='gym' width={500} height={500} />
+            <Image
+              src={Reception}
+              alt='reception area'
+              width={500}
+              height={500}
+            />
           </SplideSlide>
           <SplideSlide>
-            <Image src={Pool} alt='pool' width={500} height={500} />
+            <Image src={Room} alt='pool' width={500} height={500} />
           </SplideSlide>
-          <SplideSlide>
+          {/* <SplideSlide>
             <Image src={Laundry} alt='dry cleaning' width={500} height={500} />
           </SplideSlide>
           <SplideSlide>
             <Image src={Spa} alt='spa' width={500} height={500} />
-          </SplideSlide>
+          </SplideSlide> */}
         </Splide>
         <div className={styles.linkButton}>
           <Button title='Learn more' href='facilities' />

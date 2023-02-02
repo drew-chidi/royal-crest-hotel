@@ -26,10 +26,14 @@
   padding: 0 1em 2em 1em;
 }
 .imgWrapper {
+  height: 290px;
   margin-bottom: 1em;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   overflow: hidden;
+}
+.img {
+  height: 100%;
 }
 .contentGroup {
   border-left: 1px solid var(--col-primary);

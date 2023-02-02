@@ -2,7 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { FaPhone } from "react-icons/fa";
 import Card from "../ui/Card";
-import Walkway from "../../assets/images/walkway.jpg";
+import Building from "../../assets/images/royal-crest-building.jpeg";
+import Reception from "../../assets/images/reception-area.jpeg";
+import Board from "../../assets/images/board-room.jpeg";
 import styles from "./AboutContent.module.css";
 
 const AboutContent = () => {
@@ -28,7 +30,11 @@ const AboutContent = () => {
           <div className={styles.aboutCard}>
             <div className={styles.aboutCardItem}>
               <div className={styles.imgWrapper}>
-                <Image src={Walkway} alt='about us' className={styles.img} />
+                <Image
+                  src={Building}
+                  alt='royal crest building'
+                  className={styles.img}
+                />
               </div>
               <p className={styles.aboutDescription}>
                 We are a boutique hotel, 5 minutes from the Murtala Mohammed
@@ -41,7 +47,11 @@ const AboutContent = () => {
             </div>
             <div className={styles.aboutCardItem}>
               <div className={styles.imgWrapper}>
-                <Image src={Walkway} alt='about us' className={styles.img} />
+                <Image
+                  src={Reception}
+                  alt='reception area'
+                  className={styles.img}
+                />
               </div>
               <p className={styles.aboutDescription}>
                 Our boutique concept guarantees personalized service to all our
@@ -53,7 +63,7 @@ const AboutContent = () => {
             </div>
             <div className={styles.aboutCardItem}>
               <div className={styles.imgWrapper}>
-                <Image src={Walkway} alt='about us' className={styles.img} />
+                <Image src={Board} alt='board room' className={styles.img} />
               </div>
               <p className={styles.aboutDescription}>
                 Our faclities and services awaiting your delightsome experience
