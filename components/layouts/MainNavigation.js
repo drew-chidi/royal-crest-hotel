@@ -65,11 +65,11 @@ const MainNavigation = () => {
                     Rooms
                   </Link>
                 </li>
-                <li className={styles.navItem}>
+                {/* <li className={styles.navItem}>
                   <Link href='/facilities' className={styles.linkItem}>
                     Facilities
                   </Link>
-                </li>
+                </li> */}
                 <li className={styles.navItem}>
                   <Link
                     className={styles.linkItem}
@@ -100,11 +100,11 @@ const MainNavigation = () => {
                   Rooms
                 </Link>
               </li>
-              <li className={styles.navItemLg}>
+              {/* <li className={styles.navItemLg}>
                 <Link href='/facilities' className={styles.linkItemLg}>
                   Facilities
                 </Link>
-              </li>
+              </li> */}
               <li className={styles.navItemLg}>
                 <Link className={styles.linkItemLg} href='/contact'>
                   Contacts

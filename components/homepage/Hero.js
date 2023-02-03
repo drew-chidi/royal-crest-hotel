@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { AiOutlineContacts } from "react-icons/ai";
 import { CgScrollV } from "react-icons/cg";
 import Button from "../ui/Button";
 import Card from "../ui/Card";

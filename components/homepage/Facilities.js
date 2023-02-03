@@ -75,9 +75,9 @@ const Facilities = () => {
             <Image src={Spa} alt='spa' width={500} height={500} />
           </SplideSlide> */}
         </Splide>
-        <div className={styles.linkButton}>
+        {/* <div className={styles.linkButton}>
           <Button title='Learn more' href='facilities' />
-        </div>
+        </div> */}
         <SectionDivider />
       </Card>
     </section>
