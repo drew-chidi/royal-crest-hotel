@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import Card from "../ui/Card";
 import Studio from "../../assets/images/studio-room.jpg";
-import Classic from "../../assets/images/deluxe-room.png";
-import Deluxe from "../../assets/images/deluxe-room.png";
-import Premium from "../../assets/images/deluxe-room.png";
-import Suite from "../../assets/images/deluxe-room.png";
+import Classic from "../../assets/images/deluxe-room.jpeg";
+import Deluxe from "../../assets/images/deluxe-room-1.jpeg";
+import Premium from "../../assets/images/premium-room.jpg";
+import Suite from "../../assets/images/deluxe-room-2.jpeg";
 import Image from "next/image";
 import { BsPerson } from "react-icons/bs";
 import styles from "./RoomsContent.module.css";
@@ -12,12 +12,13 @@ import Hero from "../homepage/Hero";
 import ContactUs from "../contact/ContactUs";
 import RoomAmenities from "./RoomAmenities";
 import { GrHomeRounded } from "react-icons/gr";
+import SectionDivider from "../ui/SectionDivider";
 
 const RoomsContent = () => {
   return (
     <Fragment>
       <Hero page='room' />
-      <section>
+      <section className={styles.sectionContainer}>
         <Card>
           <div>
             <h1 className={styles.sectionHeader}> ROOMS & RATES </h1>
@@ -37,17 +38,18 @@ const RoomsContent = () => {
             </p>
           </div>
           <RoomAmenities />
+          <hr className={styles.horizontalLine} />
           <div className={styles.itemBox}>
             <div className={styles.imgWrapper}>
               <Image src={Studio} alt='the studio room' />
             </div>
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Studio Room</h2>
-              <div>
+              <div className={styles.details}>
                 <span className={styles.icon}>
                   <BsPerson />
                 </span>
-                <span className={styles.guest}>Max. guests: 2 adults</span>
+                <span className={styles.guest}> Max. guests: 2 adults</span>
               </div>
               <p className={styles.description}>
                 Our standard rooms offer comfort and convenience for travelers.
@@ -65,7 +67,7 @@ const RoomsContent = () => {
             </div>
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Classic Room</h2>
-              <div>
+              <div className={styles.details}>
                 <span className={styles.icon}>
                   <BsPerson />
                 </span>
@@ -88,7 +90,7 @@ const RoomsContent = () => {
             </div>
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Deluxe Room</h2>
-              <div>
+              <div className={styles.details}>
                 <span className={styles.icon}>
                   <BsPerson />
                 </span>
@@ -111,7 +113,7 @@ const RoomsContent = () => {
             </div>
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Premium Room</h2>
-              <div>
+              <div className={styles.details}>
                 <span className={styles.icon}>
                   <BsPerson />
                 </span>
@@ -134,7 +136,7 @@ const RoomsContent = () => {
             </div>
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Diplomatic Suite</h2>
-              <div>
+              <div className={styles.details}>
                 <span className={styles.icon}>
                   <BsPerson />
                 </span>
@@ -153,6 +155,9 @@ const RoomsContent = () => {
           </div>
         </Card>
       </section>
+      <div className={styles.divider}>
+        <SectionDivider />
+      </div>
       <ContactUs />
     </Fragment>
   );

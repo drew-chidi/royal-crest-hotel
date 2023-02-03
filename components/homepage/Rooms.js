@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Classic from "../../assets/images/deluxe-room-2.jpeg";
+import Classic from "../../assets/images/deluxe-room-1.jpeg";
 import Deluxe from "../../assets/images/deluxe-room-1.jpeg";
 import Premium from "../../assets/images/premium-room.jpg";
 import Suite from "../../assets/images/deluxe-room.jpeg";
@@ -58,7 +58,7 @@ const Rooms = () => {
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
                 <Image src={Classic} alt='room' />
-              </div>{" "}
+              </div>
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Classic Room</h3>
                 <p className={styles.roomDescription}>

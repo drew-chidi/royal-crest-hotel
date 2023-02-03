@@ -14,31 +14,31 @@ const RoomAmenities = () => {
       <div className={styles.amenitiesWrapper}>
         <div className={styles.amenities}>
           <div className={styles.imgWrapper}>
-            <Image src={aircon} alt='coffee maker' />
+            <Image src={aircon} alt='air conditioning unit' />
           </div>
-          <h4 className={styles.amenitiesTitle}>Coffee Maker</h4>
-          <p>Coffee and tea-making facility</p>
+          <h4 className={styles.amenitiesTitle}>AC</h4>
+          <p>Air conditioning unit</p>
         </div>
         <div className={styles.amenities}>
           <div className={styles.imgWrapper}>
-            <Image src={desk} alt='coffee maker' />
+            <Image src={desk} alt='reading desk and chair' />
           </div>
-          <h4>Coffee Maker</h4>
-          <p>Coffee and tea-making facility</p>
+          <h4>Desk</h4>
+          <p>Writing desk and chair</p>
         </div>
         <div className={styles.amenities}>
           <div className={styles.imgWrapper}>
-            <Image src={wardrobe} alt='coffee maker' />
+            <Image src={wardrobe} alt='Wardrobe' />
           </div>
-          <h4>Coffee Maker</h4>
-          <p>Coffee and tea-making facility</p>
+          <h4>Wardrobe</h4>
+          <p>Closet for organizing and protecting the garments</p>
         </div>
         <div className={styles.amenities}>
           <div className={styles.imgWrapper}>
             <Image src={wifi} alt='coffee maker' />
           </div>
           <h4>Coffee Maker</h4>
-          <p>Coffee and tea-making facility</p>
+          <p>24/7 access to the internet</p>
         </div>
         <div className={styles.amenities}>
           <div className={styles.imgWrapper}>
