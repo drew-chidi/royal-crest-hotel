@@ -17,7 +17,7 @@ const ContactUs = ({ page }) => {
         <h2 className={styles.title}>We are here for you</h2>
         <p className={styles.intro}>
           {`Thank you for considering our hotel for your upcoming stay. At Royal
-          Crest Hotels, we take our customers seriously. If you have any
+          Crest Hotels & Suites, we take our customers seriously. If you have any
           questions or would like to make a reservation, please don't
           hesitate to contact us.`}
         </p>
