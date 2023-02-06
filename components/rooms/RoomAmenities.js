@@ -37,7 +37,7 @@ const RoomAmenities = () => {
           <div className={styles.imgWrapper}>
             <Image src={wifi} alt='coffee maker' />
           </div>
-          <h4>Coffee Maker</h4>
+          <h4>Wifi Connection</h4>
           <p>24/7 access to the internet</p>
         </div>
         <div className={styles.amenities}>
