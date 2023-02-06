@@ -5,7 +5,7 @@ const SectionDivider = () => {
   return (
     <div className={styles.dividerWrapper}>
       <div
-        class={`${styles.divider} ${styles.divTransparent} ${styles.divDot}`}
+        className={`${styles.divider} ${styles.divTransparent} ${styles.divDot}`}
       ></div>
     </div>
   );

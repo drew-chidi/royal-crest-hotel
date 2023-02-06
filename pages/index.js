@@ -1,15 +1,14 @@
+import dynamic from "next/dynamic";
 import Head from "next/head";
-import Image from "next/image";
-import ContactUs from "../components/contact/ContactUs";
 import About from "../components/homepage/About";
 import Facilities from "../components/homepage/Facilities";
 import Hero from "../components/homepage/Hero";
 import Rooms from "../components/homepage/Rooms";
 import Testimonials from "../components/homepage/Testimonials";
-import Footer from "../components/layouts/Footer";
-import MainNavigation from "../components/layouts/MainNavigation";
 import Layout from "../components/layouts/Layout";
 import styles from "../styles/Home.module.css";
+
+const ContactUs = dynamic(() => import("../components/contact/ContactUs"));
 
 export default function Home() {
   return (

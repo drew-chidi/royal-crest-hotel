@@ -2,14 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Card from "../ui/Card";
-import Gym from "../../assets/images/gym.svg";
 import Board from "../../assets/images/board-room.jpeg";
 import Reception from "../../assets/images/reception-area.jpeg";
 import Room from "../../assets/images/deluxe-room.jpeg";
-import Pool from "../../assets/images/pool.svg";
-import Spa from "../../assets/images/spa.svg";
-import Restaurant from "../../assets/images/restaurant.svg";
-import Laundry from "../../assets/images/laundry.svg";
 import "@splidejs/react-splide/css";
 import styles from "./Facilities.module.css";
 import SectionDivider from "../ui/SectionDivider";
@@ -68,17 +63,8 @@ const Facilities = () => {
           <SplideSlide>
             <Image src={Room} alt='pool' width={500} height={500} />
           </SplideSlide>
-          {/* <SplideSlide>
-            <Image src={Laundry} alt='dry cleaning' width={500} height={500} />
-          </SplideSlide>
-          <SplideSlide>
-            <Image src={Spa} alt='spa' width={500} height={500} />
-          </SplideSlide> */}
+          <SectionDivider />
         </Splide>
-        {/* <div className={styles.linkButton}>
-          <Button title='Learn more' href='facilities' />
-        </div> */}
-        <SectionDivider />
       </Card>
     </section>
   );

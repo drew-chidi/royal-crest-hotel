@@ -2,7 +2,7 @@
   background-color: var(--col-primary);
   min-height: fit-content;
   -webkit-clip-path: polygon(
-    50% 0%,
+    50% 16%,
     57% 19%,
     100% 20%,
     100% 100%,
@@ -11,7 +11,7 @@
     42% 19%
   );
   clip-path: polygon(
-    50% 0%,
+    50% 16%,
     57% 19%,
     100% 20%,
     100% 100%,
@@ -80,4 +80,31 @@
 .copyright {
   color: white;
   font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .footerContainer {
+    background-color: var(--col-primary);
+    min-height: fit-content;
+    -webkit-clip-path: polygon(
+      50% 9%,
+      57% 19%,
+      100% 20%,
+      100% 100%,
+      0 100%,
+      0 20%,
+      42% 19%
+    );
+    clip-path: polygon(
+      50% 9%,
+      57% 19%,
+      100% 20%,
+      100% 100%,
+      0 100%,
+      0 20%,
+      42% 19%
+    );
+    color: white;
+    padding: 27.6px 0 14.4px 0;
+  }
 }

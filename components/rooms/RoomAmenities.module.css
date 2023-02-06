@@ -8,6 +8,9 @@
   row-gap: 2em;
   margin-bottom: 2em;
 }
+.amenities {
+  text-align: center;
+}
 .amenities h4 {
   text-align: center;
   margin-top: 1em;

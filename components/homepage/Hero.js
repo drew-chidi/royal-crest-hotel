@@ -5,11 +5,6 @@ import Button from "../ui/Button";
 import Card from "../ui/Card";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import Gym from "../../assets/images/gym.svg";
-import Pool from "../../assets/images/pool.svg";
-import Spa from "../../assets/images/spa.svg";
-import Restaurant from "../../assets/images/restaurant.svg";
-import Laundry from "../../assets/images/laundry.svg";
 import styles from "./Hero.module.css";
 
 const Hero = ({ page }) => {

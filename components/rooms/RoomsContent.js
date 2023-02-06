@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import dynamic from "next/dynamic";
 import Card from "../ui/Card";
 import Studio from "../../assets/images/studio-room.jpg";
 import Classic from "../../assets/images/deluxe-room.jpeg";
@@ -6,13 +7,13 @@ import Deluxe from "../../assets/images/deluxe-room-1.jpeg";
 import Premium from "../../assets/images/premium-room.jpg";
 import Suite from "../../assets/images/deluxe-room-2.jpeg";
 import Image from "next/image";
-import { BsPerson } from "react-icons/bs";
+import { BsBoxArrowInDown, BsBoxArrowInUp, BsPerson } from "react-icons/bs";
 import styles from "./RoomsContent.module.css";
 import Hero from "../homepage/Hero";
-import ContactUs from "../contact/ContactUs";
 import RoomAmenities from "./RoomAmenities";
-import { GrHomeRounded } from "react-icons/gr";
 import SectionDivider from "../ui/SectionDivider";
+
+const ContactUs = dynamic(() => import("../contact/ContactUs"));
 
 const RoomsContent = () => {
   return (
@@ -51,19 +52,37 @@ const RoomsContent = () => {
                 </span>
                 <span className={styles.guest}> Max. guests: 2 adults</span>
               </div>
+              <div className={styles.lodgeTime}>
+                <div className={styles.checkingTime}>
+                  <span className={styles.icon}>
+                    <BsBoxArrowInDown /> Check in:
+                  </span>
+                  <span className=''> 2pm;</span>
+                </div>
+                <div className={styles.checkingTime}>
+                  <span className={styles.icon}>
+                    <BsBoxArrowInUp /> Check out:
+                  </span>
+                  <span className=''> 12noon</span>
+                </div>
+              </div>
               <p className={styles.description}>
-                Our standard rooms offer comfort and convenience for travelers.
-                Each room features a comfortable bed, flat-screen TV,
-                mini-fridge, and free Wi-Fi. The private bathroom comes equipped
-                with a shower, toilet, and complimentary toiletries. Our
-                standard rooms are a great choice for those looking for an
-                affordable and comfortable place to stay.
+                Our studio room is a cozy and functional space perfect for solo
+                travelers or couples. This compact unit features a combined
+                living and sleeping area, a private bathroom, and essential
+                amenities. Experience comfortable and cost-effective
+                accommodation with all the essentials you need for a pleasant
+                stay.
               </p>
             </div>
           </div>
           <div className={styles.itemBox}>
             <div className={styles.imgWrapper}>
-              <Image src={Classic} alt='the classic room' />
+              <Image
+                src={Classic}
+                alt='the classic room'
+                className={styles.img}
+              />
             </div>
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Classic Room</h2>
@@ -73,20 +92,37 @@ const RoomsContent = () => {
                 </span>
                 <span className={styles.guest}>Max. guests: 2 adults</span>
               </div>
+              <div className={styles.lodgeTime}>
+                <div className={styles.checkingTime}>
+                  <span className={styles.icon}>
+                    <BsBoxArrowInDown /> Check in:
+                  </span>
+                  <span className=''> 2pm;</span>
+                </div>
+                <div className={styles.checkingTime}>
+                  <span className={styles.icon}>
+                    <BsBoxArrowInUp /> Check out:
+                  </span>
+                  <span className=''> 12noon</span>
+                </div>
+              </div>
               <p className={styles.description}>
-                Our hotel gym offers a range of fitness equipment and amenities,
-                including treadmills, stationary bikes, ellipticals, free
-                weights, and weight machines. In addition, we offer
-                complimentary fitness classes led by certified instructors, such
-                as yoga and Pilates, as well as convenient hours and a clean,
-                spacious facility. We aim to make it easy for our guests to stay
-                active during their stay with us.
+                Our classic room is a traditional, comfortable accommodation
+                option that is budget-friendly and cozy accommodation for solo
+                travelers or couples seeking comfort and convenience. It offers
+                a traditional, relaxed atmosphere with basic amenities, making
+                it an ideal base for your travels.
               </p>
             </div>
           </div>
           <div className={styles.itemBox}>
             <div className={styles.imgWrapper}>
-              <Image src={Deluxe} alt='the deluxe room' />
+              <Image
+                src={Deluxe}
+                alt='the deluxe room'
+                // fill
+                style={{ objectFit: "cover", objectPosition: "center" }}
+              />
             </div>
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Deluxe Room</h2>
@@ -96,14 +132,28 @@ const RoomsContent = () => {
                 </span>
                 <span className={styles.guest}>Max. guests: 2 adults</span>
               </div>
+              <div className={styles.lodgeTime}>
+                <div className={styles.checkingTime}>
+                  <span className={styles.icon}>
+                    <BsBoxArrowInDown /> Check in:
+                  </span>
+                  <span className=''> 2pm;</span>
+                </div>
+                <div className={styles.checkingTime}>
+                  <span className={styles.icon}>
+                    <BsBoxArrowInUp /> Check out:
+                  </span>
+                  <span className=''> 12noon</span>
+                </div>
+              </div>
               <p className={styles.description}>
-                Our hotel gym offers a range of fitness equipment and amenities,
-                including treadmills, stationary bikes, ellipticals, free
-                weights, and weight machines. In addition, we offer
-                complimentary fitness classes led by certified instructors, such
-                as yoga and Pilates, as well as convenient hours and a clean,
-                spacious facility. We aim to make it easy for our guests to stay
-                active during their stay with us.
+                The Royal Crest Deluxe Room offers luxurious comfort and
+                amenities, with spacious and elegant accommodations. Features
+                include comfortable beds, sitting area, flat-screen TV, Wi-Fi,
+                mini-fridge, and private bathroom with premium toiletries. The
+                Deluxe Room provides ultimate comfort and style in a larger
+                space for families, couples, or those seeking an upscale
+                experience.
               </p>
             </div>
           </div>
@@ -119,14 +169,26 @@ const RoomsContent = () => {
                 </span>
                 <span className={styles.guest}>Max. guests: 2 adults</span>
               </div>
+              <div className={styles.lodgeTime}>
+                <div className={styles.checkingTime}>
+                  <span className={styles.icon}>
+                    <BsBoxArrowInDown /> Check in:
+                  </span>
+                  <span className=''> 2pm;</span>
+                </div>
+                <div className={styles.checkingTime}>
+                  <span className={styles.icon}>
+                    <BsBoxArrowInUp /> Check out:
+                  </span>
+                  <span className=''> 12noon</span>
+                </div>
+              </div>
               <p className={styles.description}>
-                Our hotel gym offers a range of fitness equipment and amenities,
-                including treadmills, stationary bikes, ellipticals, free
-                weights, and weight machines. In addition, we offer
-                complimentary fitness classes led by certified instructors, such
-                as yoga and Pilates, as well as convenient hours and a clean,
-                spacious facility. We aim to make it easy for our guests to stay
-                active during their stay with us.
+                Our premium room offers luxury and comfort with spacious,
+                elegantly designed interiors featuring a king-size bed and
+                separate seating area. Enjoy extras such as a minibar, fast
+                Wi-Fi, flat-screen TV, and coffee/tea maker. Experience a
+                memorable stay with our focus on comfort and convenience.
               </p>
             </div>
           </div>
@@ -137,19 +199,31 @@ const RoomsContent = () => {
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Diplomatic Suite</h2>
               <div className={styles.details}>
-                <span className={styles.icon}>
-                  <BsPerson />
+                <span className={styles.icon}>{<BsPerson />}</span>
+                <span className={styles.guest}>
+                  Max. guests: 2 adults 2 children
                 </span>
-                <span className={styles.guest}>Max. guests: 2 adults</span>
+              </div>
+              <div className={styles.lodgeTime}>
+                <div className={styles.checkingTime}>
+                  <span className={styles.icon}>
+                    <BsBoxArrowInDown /> Check in:
+                  </span>
+                  <span className=''> 2pm;</span>
+                </div>
+                <div className={styles.checkingTime}>
+                  <span className={styles.icon}>
+                    <BsBoxArrowInUp /> Check out:
+                  </span>
+                  <span className=''> 12noon</span>
+                </div>
               </div>
               <p className={styles.description}>
-                Our hotel gym offers a range of fitness equipment and amenities,
-                including treadmills, stationary bikes, ellipticals, free
-                weights, and weight machines. In addition, we offer
-                complimentary fitness classes led by certified instructors, such
-                as yoga and Pilates, as well as convenient hours and a clean,
-                spacious facility. We aim to make it easy for our guests to stay
-                active during their stay with us.
+                Our diplomatic suite offers luxurious and spacious
+                accommodations with separate living and bedroom areas, private
+                bathroom, elegant decor and high-end furnishings. Ideal for
+                business travelers, families, or those seeking a luxurious stay
+                experience.
               </p>
             </div>
           </div>
