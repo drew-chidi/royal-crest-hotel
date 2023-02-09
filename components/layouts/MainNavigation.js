@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Logo from "../../assets/images/royal-crest-logo.png";
 import Card from "../ui/Card";
-
 import styles from "./MainNavigation.module.css";
 
 const MainNavigation = () => {
@@ -41,9 +40,9 @@ const MainNavigation = () => {
             </div>
             <div className={styles.slogan}>...Step into Royalty</div>
           </div>
-          <button className={styles.menu} onClick={toggleHandler}>
+          <div className={styles.menu} onClick={toggleHandler}>
             {!menuOpen ? <AiOutlineMenu /> : <AiOutlineClose />}
-          </button>
+          </div>
           {menuOpen && (
             <nav className={styles.navLinksWrapperMobile}>
               <ul className={styles.navListGroup}>
@@ -62,11 +61,6 @@ const MainNavigation = () => {
                     Rooms
                   </Link>
                 </li>
-                {/* <li className={styles.navItem}>
-                  <Link href='/facilities' className={styles.linkItem}>
-                    Facilities
-                  </Link>
-                </li> */}
                 <li className={styles.navItem}>
                   <Link
                     className={styles.linkItem}
@@ -97,11 +91,6 @@ const MainNavigation = () => {
                   Rooms
                 </Link>
               </li>
-              {/* <li className={styles.navItemLg}>
-                <Link href='/facilities' className={styles.linkItemLg}>
-                  Facilities
-                </Link>
-              </li> */}
               <li className={styles.navItemLg}>
                 <Link className={styles.linkItemLg} href='/contact'>
                   Contacts

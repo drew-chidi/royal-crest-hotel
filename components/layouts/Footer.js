@@ -22,27 +22,26 @@ const Footer = () => {
           <div className={styles.socialsWrapper}>
             <ul className={styles.socialsGroup}>
               <li className={styles.socialList}>
-                <a className={styles.socialLink}>
-                  <FaYoutube />
-                </a>
-              </li>
-              <li className={styles.socialList}>
-                <a className={styles.socialLink}>
+                <a
+                  href='https://www.facebook.com/RoyalCrestHotel/'
+                  className={styles.socialLink}
+                >
                   <GrInstagram />
                 </a>
               </li>
               <li className={styles.socialList}>
-                <a className={styles.socialLink}>
+                <a
+                  href='https://www.facebook.com/RoyalCrestHotel/'
+                  className={styles.socialLink}
+                >
                   <FaFacebookF />
                 </a>
               </li>
               <li className={styles.socialList}>
-                <a className={styles.socialLink}>
-                  <FaTwitter />
-                </a>
-              </li>
-              <li className={styles.socialList}>
-                <a className={styles.socialLink}>
+                <a
+                  href='https://www.linkedin.com/in/uzor-ojirika-a468a332/?original_referer=https%3A%2F%2Fwww.google.com%2F'
+                  className={styles.socialLink}
+                >
                   <FaLinkedin />
                 </a>
               </li>
