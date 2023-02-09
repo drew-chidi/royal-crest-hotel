@@ -36,11 +36,8 @@ const MainNavigation = () => {
       <Card>
         <div className={styles.navWrap}>
           <div>
-            <div className={styles.hotelLogoBox}>
+            <div className={styles.logoImgWrapper}>
               <Image src={Logo} alt='company logo' />
-
-              {/* <p className={styles.hotelName}>Royal Crest</p>
-              <p className={styles.hotel}>HOTELS & SUITES</p> */}
             </div>
             <div className={styles.slogan}>...Step into Royalty</div>
           </div>

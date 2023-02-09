@@ -28,6 +28,7 @@ const Rooms = () => {
         <Splide
           options={{
             pagination: false,
+            lazyLoad: "sequential",
           }}
           aria-label='facilities slide'
         >
