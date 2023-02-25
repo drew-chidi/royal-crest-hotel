@@ -18,7 +18,7 @@
 .imgWrapper .img {
   width: 100%;
   height: auto;
-  vertical-align: middle;
+  aspect-ratio: 1.33;
 }
 .details {
   display: flex;
@@ -57,8 +57,6 @@
 /* 
     ----------- MEDIA QUERIES --------
  */
-@media (min-width: 480px) {
-}
 @media (min-width: 600px) {
   .description {
     display: block;
@@ -100,6 +98,11 @@
 @media (min-width: 1280px) {
   .itemBox {
     margin-bottom: 54.3px;
+  }
+  .imgWrapper .img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
   }
 }
 @media (min-width: 1440px) {

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { Fragment } from "react";
 import dynamic from "next/dynamic";
 import Card from "../ui/Card";
@@ -6,7 +7,6 @@ import Classic from "../../assets/images/deluxe-room.jpeg";
 import Deluxe from "../../assets/images/deluxe-room-1.jpeg";
 import Premium from "../../assets/images/premium-room.jpg";
 import Suite from "../../assets/images/deluxe-room-2.jpeg";
-import Image from "next/image";
 import { BsBoxArrowInDown, BsBoxArrowInUp, BsPerson } from "react-icons/bs";
 import styles from "./RoomsContent.module.css";
 import Hero from "../homepage/Hero";
@@ -42,7 +42,11 @@ const RoomsContent = () => {
           <hr className={styles.horizontalLine} />
           <div className={styles.itemBox}>
             <div className={styles.imgWrapper}>
-              <Image src={Studio} alt='the studio room' />
+              <Image
+                src={Studio}
+                alt='the studio room'
+                className={styles.img}
+              />
             </div>
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Studio Room</h2>
@@ -120,8 +124,7 @@ const RoomsContent = () => {
               <Image
                 src={Deluxe}
                 alt='the deluxe room'
-                // fill
-                style={{ objectFit: "cover", objectPosition: "center" }}
+                className={styles.img}
               />
             </div>
             <div className={styles.contentGroup}>
@@ -159,7 +162,11 @@ const RoomsContent = () => {
           </div>
           <div className={styles.itemBox}>
             <div className={styles.imgWrapper}>
-              <Image src={Premium} alt='the premium room' />
+              <Image
+                src={Premium}
+                alt='the premium room'
+                className={styles.img}
+              />
             </div>
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Premium Room</h2>
@@ -194,7 +201,7 @@ const RoomsContent = () => {
           </div>
           <div className={styles.itemBox}>
             <div className={styles.imgWrapper}>
-              <Image src={Suite} alt='the suite' />
+              <Image src={Suite} alt='the suite' className={styles.img} />
             </div>
             <div className={styles.contentGroup}>
               <h2 className={styles.title}>Diplomatic Suite</h2>
