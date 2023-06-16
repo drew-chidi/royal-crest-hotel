@@ -1,17 +1,17 @@
-import React from "react";
-import Image from "next/image";
-import { CgScrollV } from "react-icons/cg";
-import Button from "../ui/Button";
-import Card from "../ui/Card";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-import styles from "./Hero.module.css";
+import React from 'react';
+import Image from 'next/image';
+import { CgScrollV } from 'react-icons/cg';
+import Button from '../ui/Button';
+import Card from '../ui/Card';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
+import styles from './Hero.module.css';
 
 const Hero = ({ page }) => {
   let heroContainer;
-  if (page === "room") {
+  if (page === 'room') {
     heroContainer = `${styles.heroContainer} ${styles.bgImageRoom}`;
-  } else if (page === "facilities") {
+  } else if (page === 'facilities') {
     heroContainer = `${styles.heroContainer} ${styles.bgImageFacilities}`;
   } else {
     heroContainer = styles.heroContainer;
@@ -19,22 +19,22 @@ const Hero = ({ page }) => {
 
   return (
     <div className={heroContainer}>
-      {page === "facilities" && (
+      {page === 'facilities' && (
         <Splide
           options={{
             pagination: false,
-            lazyLoad: "sequential",
+            lazyLoad: 'sequential',
             autoplay: true,
             cover: true,
             heightRatio: 0.6,
-            mediaQuery: "min",
+            mediaQuery: 'min',
             breakpoints: {
               600: {
                 heightRatio: 0.5,
               },
             },
             speed: 0,
-            type: "loop",
+            type: 'loop',
           }}
           aria-label='facilities slide'
         >
@@ -84,7 +84,7 @@ const Hero = ({ page }) => {
         <div className={styles.welcomeBox}>
           <p className={styles.welcomep1}>WELCOME TO</p>
           <div className={styles.welcomeHeading}>ROYAL CREST</div>
-          <p className={styles.welcomep2}>HOTELS</p>
+          <p className={styles.welcomep2}>HOTEL & SUITES</p>
           <p className={styles.welcomep3}>
             Book your stay and enjoy Luxury redefined at the most affordable
             rates.

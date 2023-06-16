@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 import {
   FaFacebookF,
   FaLinkedin,
   FaTwitter,
   FaWhatsapp,
   FaYoutube,
-} from "react-icons/fa";
-import { GrInstagram } from "react-icons/gr";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import { ImPhone } from "react-icons/im";
-import { MdMail, MdOutlineMail } from "react-icons/md";
-import Card from "../ui/Card";
+} from 'react-icons/fa';
+import { GrInstagram } from 'react-icons/gr';
+import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { ImPhone } from 'react-icons/im';
+import { MdMail, MdOutlineMail } from 'react-icons/md';
+import Card from '../ui/Card';
 
-import styles from "./Footer.module.css";
+import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
@@ -23,7 +23,7 @@ const Footer = () => {
             <ul className={styles.socialsGroup}>
               <li className={styles.socialList}>
                 <a
-                  href='https://www.facebook.com/RoyalCrestHotel/'
+                  href='https://instagram.com/royalcrest.hotel.suites?igshid=ZWIzMWE5ZmU3Zg=='
                   className={styles.socialLink}
                 >
                   <GrInstagram />
@@ -31,7 +31,7 @@ const Footer = () => {
               </li>
               <li className={styles.socialList}>
                 <a
-                  href='https://www.facebook.com/RoyalCrestHotel/'
+                  href='https://www.facebook.com/profile.php?id=100088426539331&mibextid=LQQJ4d'
                   className={styles.socialLink}
                 >
                   <FaFacebookF />
@@ -53,7 +53,7 @@ const Footer = () => {
             <address className={styles.addressContainer}>
               <p className={styles.locationInfo}>
                 9, Osolo Way, 7 & 8 Bus Stop <br />
-                AJao Estate, Lagos, Ng.
+                Ajao Estate, Lagos, Ng.
               </p>
             </address>
           </div>
@@ -75,7 +75,9 @@ const Footer = () => {
               <span className={styles.contactIcon}>
                 <MdMail />
               </span>
-              <a href='mailto: info@royal-crest.com'>info@royal-crest.com </a>
+              <a href='mailto: reservations-lagos@royalcresthotelsng.com'>
+                reservations-lagos@royalcresthotelsng.com{' '}
+              </a>
             </div>
           </div>
           <div className={styles.copyrightWrapper}>

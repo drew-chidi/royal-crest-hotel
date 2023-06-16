@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Royal Crest Hotel</title>
+        <title>Royal Crest Hotel & Suites</title>
         <meta name='description' content='Royal Crest Hotels & Suites' />
         <meta
           name='google-site-verification'

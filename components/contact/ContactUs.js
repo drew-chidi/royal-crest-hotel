@@ -1,14 +1,14 @@
-import React from "react";
-import Button from "../ui/Button";
-import Card from "../ui/Card";
-import { ImLocation, ImPhone } from "react-icons/im";
-import { MdOutlineMail } from "react-icons/md";
-import styles from "./ContactUs.module.css";
+import React from 'react';
+import Button from '../ui/Button';
+import Card from '../ui/Card';
+import { ImLocation, ImPhone } from 'react-icons/im';
+import { MdOutlineMail } from 'react-icons/md';
+import styles from './ContactUs.module.css';
 
 const ContactUs = ({ page }) => {
   return (
     <section className={styles.contactContainer} id='contacts'>
-      {page === "contact" && (
+      {page === 'contact' && (
         <div className={styles.headingWrapper}>
           <h1 className={styles.heading}>Contact Us</h1>
         </div>
@@ -61,8 +61,11 @@ const ContactUs = ({ page }) => {
                   </span>
                   <p className={styles.contactLabel}>Email: </p>
                 </div>
-                <a href='mailto:info@royal-crest.com' className={styles.link}>
-                  info@royal-crest.com
+                <a
+                  href='mailto:reservations-lagos@royalcresthotelsng.com'
+                  className={styles.link}
+                >
+                  reservations-lagos@royalcresthotelsng.com{' '}
                 </a>
               </div>
             </div>
