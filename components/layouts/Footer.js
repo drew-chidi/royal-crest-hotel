@@ -48,7 +48,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.detailsWrapper}>
-            <p className={styles.royalCrest}>Royal Crest, Lagos</p>
+            <p className={styles.royalCrest}>
+              Royal Crest Hotel & Suites, Lagos
+            </p>
 
             <address className={styles.addressContainer}>
               <p className={styles.locationInfo}>

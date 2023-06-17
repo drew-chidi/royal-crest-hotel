@@ -1,16 +1,16 @@
-import Image from "next/image";
-import React from "react";
-import Classic from "../../assets/images/deluxe-room-1.jpeg";
-import Deluxe from "../../assets/images/deluxe-room-1.jpeg";
-import Premium from "../../assets/images/premium-room.jpg";
-import Suite from "../../assets/images/deluxe-room.jpeg";
-import Studio from "../../assets/images/studio-room.jpg";
-import Card from "../ui/Card";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import Button from "../ui/Button";
-import SectionDivider from "../ui/SectionDivider";
-import "@splidejs/react-splide/css";
-import styles from "./Rooms.module.css";
+import Image from 'next/image';
+import React from 'react';
+import Classic from '../../assets/images/deluxe-room-1.jpeg';
+import Deluxe from '../../assets/images/deluxe-room-1.jpeg';
+import Premium from '../../assets/images/premium-room.jpg';
+import Suite from '../../assets/images/deluxe-room.jpeg';
+import Studio from '../../assets/images/studio-room.jpg';
+import Card from '../ui/Card';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import Button from '../ui/Button';
+import SectionDivider from '../ui/SectionDivider';
+import '@splidejs/react-splide/css';
+import styles from './Rooms.module.css';
 
 const Rooms = () => {
   return (
@@ -28,7 +28,7 @@ const Rooms = () => {
         <Splide
           options={{
             pagination: false,
-            lazyLoad: "sequential",
+            lazyLoad: 'sequential',
           }}
           aria-label='facilities slide'
         >
@@ -47,13 +47,13 @@ const Rooms = () => {
                   for a relaxing and enjoyable stay.
                 </p>
                 <p className={styles.price}>
-                  Rates from <strong>NGN18,000.00</strong>
-                </p>{" "}
+                  Rates from <strong>NGN23,000.00</strong>
+                </p>{' '}
                 <div className={styles.linkButton}>
                   <Button title='Read more' href='rooms' />
                 </div>
               </div>
-            </div>{" "}
+            </div>{' '}
           </SplideSlide>
           <SplideSlide>
             <div className={styles.slideWrapper}>
@@ -70,7 +70,7 @@ const Rooms = () => {
                   for a relaxing and enjoyable stay.
                 </p>
                 <p className={styles.price}>
-                  Rates from <strong>NGN20,000.00</strong>
+                  Rates from <strong>NGN25,000.00</strong>
                 </p>
                 <div className={styles.linkButton}>
                   <Button title='Read more' href='rooms' />
@@ -82,7 +82,7 @@ const Rooms = () => {
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
                 <Image src={Deluxe} alt='room' />
-              </div>{" "}
+              </div>{' '}
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Deluxe Room</h3>
                 <p className={styles.roomDescription}>
@@ -93,13 +93,13 @@ const Rooms = () => {
                   for a relaxing and enjoyable stay.
                 </p>
                 <p className={styles.price}>
-                  Rates from <strong>NGN27,000.00</strong>
-                </p>{" "}
+                  Rates from <strong>NGN32,000.00</strong>
+                </p>{' '}
                 <div className={styles.linkButton}>
                   <Button title='Read more' href='rooms' />
                 </div>
               </div>
-            </div>{" "}
+            </div>{' '}
           </SplideSlide>
           <SplideSlide>
             <div className={styles.slideWrapper}>
@@ -116,19 +116,19 @@ const Rooms = () => {
                   for a relaxing and enjoyable stay.
                 </p>
                 <p className={styles.price}>
-                  Rates from <strong>NGN30,000.00</strong>
+                  Rates from <strong>NGN35,000.00</strong>
                 </p>
                 <div className={styles.linkButton}>
                   <Button title='Read more' href='rooms' />
                 </div>
               </div>
-            </div>{" "}
+            </div>{' '}
           </SplideSlide>
           <SplideSlide>
             <div className={styles.slideWrapper}>
               <div className={styles.imgWrapper}>
                 <Image src={Suite} alt='diplomatic suites' />
-              </div>{" "}
+              </div>{' '}
               <div className={styles.roomDetails}>
                 <h3 className={styles.roomType}>Diplomatic Suite</h3>
                 <p className={styles.roomDescription}>
@@ -139,7 +139,7 @@ const Rooms = () => {
                   for a relaxing and enjoyable stay.
                 </p>
                 <p className={styles.price}>
-                  Rates from <strong>NGN60,000.00</strong>
+                  Rates from <strong>NGN70,000.00</strong>
                 </p>
                 <div className={styles.linkButton}>
                   <Button title='Read more' href='rooms' />
