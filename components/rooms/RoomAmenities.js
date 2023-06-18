@@ -1,25 +1,34 @@
-import Image from "next/image";
-import React from "react";
-import coffeeMaker from "../../assets/images/tea-cup-coffee.svg";
-import wardrobe from "../../assets/images/wardrobe.svg";
-import wifi from "../../assets/images/wifi.svg";
-import desk from "../../assets/images/desk.svg";
-import aircon from "../../assets/images/air-conditioner-svgrepo-com.svg";
-import styles from "./RoomAmenities.module.css";
+import Image from 'next/image';
+// import coffeeMaker from '../../assets/images/tea-cup-coffee.svg';
+// import wardrobe from '../../assets/images/wardrobe.svg';
+// import wifi from '../../assets/images/wifi.svg';
+// import desk from '../../assets/images/desk.svg';
+// import aircon from '../../assets/images/air-conditioner-svgrepo-com.svg';
+import styles from './RoomAmenities.module.css';
+import { roomContents } from '../../content';
 
 const RoomAmenities = () => {
   return (
     <article>
       <h2 className={styles.title}>Room Amenities</h2>
       <div className={styles.amenitiesWrapper}>
-        <div className={styles.amenities}>
+        {roomContents?.amenities?.map((item) => (
+          <div className={styles.amenities} key={item.id}>
+            <div className={styles.imgWrapper}>
+              <Image src={item.icon} alt={item.alt || item.type} />
+            </div>
+            <h4 className={styles.amenitiesTitle}>{item.type}</h4>
+            <p>{item.description}</p>
+          </div>
+        ))}
+        {/* <div className={styles.amenities} key={id}>
           <div className={styles.imgWrapper}>
             <Image src={aircon} alt='air conditioning unit' />
           </div>
           <h4 className={styles.amenitiesTitle}>AC</h4>
           <p>Air conditioning unit</p>
-        </div>
-        <div className={styles.amenities}>
+        </div> */}
+        {/* <div className={styles.amenities}>
           <div className={styles.imgWrapper}>
             <Image src={desk} alt='reading desk and chair' />
           </div>
@@ -46,7 +55,7 @@ const RoomAmenities = () => {
           </div>
           <h4>Coffee Maker</h4>
           <p>Coffee and tea-making facility</p>
-        </div>
+        </div> */}
       </div>
     </article>
   );
