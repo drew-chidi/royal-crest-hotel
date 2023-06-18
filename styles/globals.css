@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&family=Style+Script&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@500;600;700;800;900&display=swap');
 
@@ -131,7 +131,7 @@ h1 {
   font-size: var(--f-h1-sm);
   line-height: 1.2;
   color: var(--col-primary);
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.05em;
 }
 h2 {
@@ -139,7 +139,7 @@ h2 {
   font-size: 1.5rem;
   line-height: 1.4;
   color: var(--col-primary);
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.05em;
 }
 h3 {
@@ -147,7 +147,7 @@ h3 {
   /* font-size: 1.1875rem; */
   line-height: 1.2;
   color: var(--col-primary);
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.05em;
 }
 h4 {
@@ -155,7 +155,7 @@ h4 {
   /* font-size: 1.1875rem; */
   line-height: 1.2;
   color: var(--col-primary);
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.05em;
 }
 button {
@@ -187,7 +187,7 @@ p {
 @media (min-width: 600px) {
   h1 {
     font-size: var(--f-h1-tab);
-    font-weight: 700;
+    font-weight: 500;
   }
   h2 {
     font-size: 1.625rem;
@@ -204,7 +204,7 @@ p {
 }
 @media (min-width: 768px) {
   h1 {
-    font-weight: 700;
+    font-weight: 500;
   }
   p,
   button,
@@ -215,7 +215,7 @@ p {
 @media (min-width: 900px) {
   h1 {
     font-size: var(--f-h1-tab-l);
-    font-weight: 700;
+    font-weight: 500;
   }
   p,
   button,
@@ -226,7 +226,7 @@ p {
 }
 @media (min-width: 1024px) {
   h1 {
-    font-weight: 700;
+    font-weight: 500;
   }
   p,
   button,
@@ -238,7 +238,7 @@ p {
 @media (min-width: 1280px) {
   h1 {
     font-size: var(--f-h1-xl);
-    font-weight: 700;
+    font-weight: 500;
   }
   h2 {
     font-size: 2.1875rem;
@@ -255,7 +255,7 @@ p {
 @media (min-width: 1440px) {
   h1 {
     font-size: var(--f-h1-xl);
-    font-weight: 700;
+    font-weight: 500;
   }
   p,
   button,
