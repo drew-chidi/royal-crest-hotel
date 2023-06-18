@@ -1,19 +1,20 @@
-import Image from "next/image";
-import React, { Fragment } from "react";
-import dynamic from "next/dynamic";
-import Card from "../ui/Card";
-import Studio from "../../assets/images/studio-room.jpg";
-import Classic from "../../assets/images/deluxe-room.jpeg";
-import Deluxe from "../../assets/images/deluxe-room-1.jpeg";
-import Premium from "../../assets/images/premium-room.jpg";
-import Suite from "../../assets/images/deluxe-room-2.jpeg";
-import { BsBoxArrowInDown, BsBoxArrowInUp, BsPerson } from "react-icons/bs";
-import styles from "./RoomsContent.module.css";
-import Hero from "../homepage/Hero";
-import RoomAmenities from "./RoomAmenities";
-import SectionDivider from "../ui/SectionDivider";
+import Image from 'next/image';
+import React, { Fragment } from 'react';
+import dynamic from 'next/dynamic';
+import Card from '../ui/Card';
+import Studio from '../../assets/images/studio-room.jpg';
+import Classic from '../../assets/images/deluxe-room.jpeg';
+import Deluxe from '../../assets/images/deluxe-room-1.jpeg';
+import Premium from '../../assets/images/premium-room.jpg';
+import Suite from '../../assets/images/deluxe-room-2.jpeg';
+import { BsBoxArrowInDown, BsBoxArrowInUp, BsPerson } from 'react-icons/bs';
+import styles from './RoomsContent.module.css';
+import Hero from '../homepage/Hero';
+import RoomAmenities from './RoomAmenities';
+import SectionDivider from '../ui/SectionDivider';
+import { roomContents } from '../../content';
 
-const ContactUs = dynamic(() => import("../contact/ContactUs"));
+const ContactUs = dynamic(() => import('../contact/ContactUs'));
 
 const RoomsContent = () => {
   return (
@@ -40,15 +41,15 @@ const RoomsContent = () => {
           </div>
           <RoomAmenities />
           <hr className={styles.horizontalLine} />
-          <div className={styles.itemBox}>
+          {/* <div className={styles.itemBox}>
             <div className={styles.imgWrapper}>
               <Image
                 src={Studio}
                 alt='the studio room'
                 className={styles.img}
               />
-            </div>
-            <div className={styles.contentGroup}>
+            </div> */}
+          {/* <div className={styles.contentGroup}>
               <h2 className={styles.title}>Studio Room</h2>
               <div className={styles.details}>
                 <span className={styles.icon}>
@@ -79,8 +80,46 @@ const RoomsContent = () => {
                 stay.
               </p>
             </div>
-          </div>
-          <div className={styles.itemBox}>
+          </div> */}
+          {roomContents.details?.map((item) => (
+            <div className={styles.itemBox} key={item.id}>
+              <div className={styles.imgWrapper}>
+                <Image
+                  src={item.image}
+                  alt='the studio room'
+                  className={styles.img}
+                />
+              </div>
+              <div className={styles.contentGroup}>
+                <h2 className={styles.title}>{item.title}</h2>
+                <div className={styles.details}>
+                  <span className={styles.icon}>
+                    <BsPerson />
+                  </span>
+                  <span className={styles.guest}>
+                    {' '}
+                    Max. guests: {item.maxGuests}
+                  </span>
+                </div>
+                <div className={styles.lodgeTime}>
+                  <div className={styles.checkingTime}>
+                    <span className={styles.icon}>
+                      <BsBoxArrowInDown /> Check in:
+                    </span>
+                    <span className=''> {item.checkin}</span>
+                  </div>
+                  <div className={styles.checkingTime}>
+                    <span className={styles.icon}>
+                      <BsBoxArrowInUp /> Check out:
+                    </span>
+                    <span className=''> {item.checkout}</span>
+                  </div>
+                </div>
+                <p className={styles.description}>{item.description}</p>
+              </div>
+            </div>
+          ))}
+          {/* <div className={styles.itemBox}>
             <div className={styles.imgWrapper}>
               <Image
                 src={Classic}
@@ -232,8 +271,8 @@ const RoomsContent = () => {
                 business travelers, families, or those seeking a luxurious stay
                 experience.
               </p>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </Card>
       </section>
       <div className={styles.divider}>
