@@ -8,7 +8,6 @@ import Room from '../../assets/images/deluxe-room.jpeg';
 import '@splidejs/react-splide/css';
 import styles from './Facilities.module.css';
 import SectionDivider from '../ui/SectionDivider';
-import Button from '../ui/Button';
 
 const Facilities = () => {
   return (

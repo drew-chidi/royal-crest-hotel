@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Classic from '../../assets/images/deluxe-room-1.jpeg';
-import Deluxe from '../../assets/images/deluxe-room-1.jpeg';
+import Deluxe from '../../assets/images/deluxe-room.jpeg';
 import Premium from '../../assets/images/premium-room.jpg';
 import Suite from '../../assets/images/deluxe-room.jpeg';
 import Studio from '../../assets/images/studio-room.jpg';
@@ -142,7 +142,7 @@ const Rooms = () => {
                   Rates from <strong>NGN70,000.00</strong>
                 </p>
                 <div className={styles.linkButton}>
-                  <Button title='Read more' href='rooms' />
+                  <Button title='Read more' href='rooms/#suites' />
                 </div>
               </div>
             </div>

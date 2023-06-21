@@ -7,10 +7,12 @@ import Safe from '../assets/images/safe.svg';
 import HairDryer from '../assets/images/hairdryer.svg';
 import Mirror from '../assets/images/mirror.svg';
 import Studio from '../assets/images/studio-room.jpg';
-import Classic from '../assets/images/deluxe-room.jpeg';
-import Deluxe from '../assets/images/deluxe-room-1.jpeg';
+import Classic from '../assets/images/deluxe-room-1.jpeg';
+import Deluxe from '../assets/images/deluxe-room.jpeg';
 import Premium from '../assets/images/premium-room.jpg';
 import Suite from '../assets/images/deluxe-room-2.jpeg';
+
+export const homepageContents = {};
 
 export const roomContents = {
   amenities: [
