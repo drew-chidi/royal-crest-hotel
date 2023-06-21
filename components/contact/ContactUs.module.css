@@ -42,13 +42,14 @@
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   align-items: flex-start;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .emailAddress .link {
   word-wrap: break-word;
 }
 .link {
   line-height: 1.6;
+  margin-bottom: 1em;
 }
 .labelGroup {
   display: flex;
