@@ -65,7 +65,7 @@ const Footer = () => {
               <span className={styles.contactIcon}>
                 <ImPhone />
               </span>
-              <a href='tel: +2349134448666'>09134448666 | </a>
+              <a href='tel: +2349134447999'>09134447999 | </a>
             </div>
             <div className={styles.contactGroup}>
               <span className={styles.contactIcon}>
