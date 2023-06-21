@@ -15,8 +15,7 @@
   --f-h1-tab-l: 2.5rem;
   --f-h1-xl: 3.125rem;
   --f-h1-xxxl: 3.75rem;
-  --f-body-sm: 0.75rem;
-  --f-body-tab: 0.875rem;
+  --f-body-tab: 1rem;
   --f-body-xl: 1rem;
 }
 
@@ -112,6 +111,7 @@ h4,
 h5,
 h6 {
   font-family: 'Rubik', sans-serif;
+  font-weight: 500;
 }
 
 a img {
@@ -131,7 +131,6 @@ h1 {
   font-size: var(--f-h1-sm);
   line-height: 1.2;
   color: var(--col-primary);
-  font-weight: 500;
   letter-spacing: 0.05em;
 }
 h2 {
@@ -139,51 +138,36 @@ h2 {
   font-size: 1.5rem;
   line-height: 1.4;
   color: var(--col-primary);
-  font-weight: 500;
   letter-spacing: 0.05em;
 }
 h3 {
   font-size: 1.25rem;
-  /* font-size: 1.1875rem; */
   line-height: 1.2;
   color: var(--col-primary);
-  font-weight: 500;
   letter-spacing: 0.05em;
 }
 h4 {
   font-size: 1rem;
-  /* font-size: 1.1875rem; */
   line-height: 1.2;
   color: var(--col-primary);
-  font-weight: 500;
   letter-spacing: 0.05em;
 }
 button {
   outline: none;
   border: 0;
   background-color: transparent;
-  font-size: 0.75rem;
   color: var(--col-primary);
 }
 p,
 label,
 address {
-  font-size: 0.875rem;
   color: var(--col-primary);
   line-height: 1.5;
 }
 p {
   line-height: 1.5;
 }
-@media (min-width: 480px) {
-  p,
-  button,
-  label,
-  address {
-    font-size: var(--f-body-sm);
-    /* font-size: 0.4rem; */
-  }
-}
+
 @media (min-width: 600px) {
   h1 {
     font-size: var(--f-h1-tab);
@@ -195,21 +179,10 @@ p {
   h3 {
     font-size: 1.25rem;
   }
-  p,
-  button,
-  label,
-  address {
-    font-size: var(--f-body-tab);
-  }
 }
 @media (min-width: 768px) {
   h1 {
     font-weight: 500;
-  }
-  p,
-  button,
-  label {
-    font-size: var(--f-body-tab);
   }
 }
 @media (min-width: 900px) {
@@ -217,22 +190,10 @@ p {
     font-size: var(--f-h1-tab-l);
     font-weight: 500;
   }
-  p,
-  button,
-  label,
-  address {
-    font-size: var(--f-body-tab-l);
-  }
 }
 @media (min-width: 1024px) {
   h1 {
     font-weight: 500;
-  }
-  p,
-  button,
-  label,
-  address {
-    font-size: var(--f-body-xl);
   }
 }
 @media (min-width: 1280px) {
@@ -246,21 +207,11 @@ p {
   h3 {
     font-size: 1.875rem;
   }
-  p,
-  button,
-  label {
-    font-size: var(--f-body-xl);
-  }
 }
 @media (min-width: 1440px) {
   h1 {
     font-size: var(--f-h1-xl);
     font-weight: 500;
-  }
-  p,
-  button,
-  label {
-    font-size: var(--f-body-xl);
   }
 }
 
