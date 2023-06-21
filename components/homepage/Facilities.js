@@ -1,14 +1,14 @@
-import React from "react";
-import Image from "next/image";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import Card from "../ui/Card";
-import Board from "../../assets/images/board-room.jpeg";
-import Reception from "../../assets/images/reception-area.jpeg";
-import Room from "../../assets/images/deluxe-room.jpeg";
-import "@splidejs/react-splide/css";
-import styles from "./Facilities.module.css";
-import SectionDivider from "../ui/SectionDivider";
-import Button from "../ui/Button";
+import React from 'react';
+import Image from 'next/image';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import Card from '../ui/Card';
+import Board from '../../assets/images/board-room.jpeg';
+import Reception from '../../assets/images/reception-area.jpeg';
+import Room from '../../assets/images/deluxe-room.jpeg';
+import '@splidejs/react-splide/css';
+import styles from './Facilities.module.css';
+import SectionDivider from '../ui/SectionDivider';
+import Button from '../ui/Button';
 
 const Facilities = () => {
   return (
@@ -27,10 +27,10 @@ const Facilities = () => {
         </div>
         <Splide
           options={{
-            mediaQuery: "min",
+            mediaQuery: 'min',
             perMove: 1,
             perPage: 1,
-            gap: "1rem",
+            gap: '1rem',
             pagination: false,
             breakpoints: {
               600: {
@@ -61,7 +61,7 @@ const Facilities = () => {
             />
           </SplideSlide>
           <SplideSlide>
-            <Image src={Room} alt='pool' width={500} height={500} />
+            <Image src={Room} alt='room' width={500} height={500} />
           </SplideSlide>
           <SectionDivider />
         </Splide>
