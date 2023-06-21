@@ -29,7 +29,7 @@
   text-align: left;
 }
 .details {
-  font-size: 0.5rem;
+  /* font-size: 0.5rem; */
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0em;
@@ -44,8 +44,10 @@
   align-items: flex-start;
   margin-bottom: 1em;
 }
+.emailAddress .link {
+  word-wrap: break-word;
+}
 .link {
-  font-size: 0.75rem;
   line-height: 1.6;
 }
 .labelGroup {

@@ -65,7 +65,7 @@ const ContactUs = ({ page }) => {
                   href='mailto:reservations-lagos@royalcresthotelsng.com'
                   className={styles.link}
                 >
-                  reservations-lagos@royalcresthotelsng.com{' '}
+                  {'reservations-lagos@royalcresthotelsng.com'}
                 </a>
               </div>
             </div>
