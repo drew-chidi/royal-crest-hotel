@@ -39,7 +39,7 @@ const Footer = () => {
               </li>
               <li className={styles.socialList}>
                 <a
-                  href='https://www.linkedin.com/in/uzor-ojirika-a468a332/?original_referer=https%3A%2F%2Fwww.google.com%2F'
+                  href='https://www.linkedin.com/in/royal-crest-hotel-and-suites'
                   className={styles.socialLink}
                 >
                   <FaLinkedin />

@@ -10,7 +10,7 @@
 :root {
   --col-primary: rgba(20, 39, 74, 1);
   --col-secondary: #f8d084;
-  --f-h1-sm: 1.75rem;
+  --f-h1-sm: 2rem;
   --f-h1-tab: 2.25rem;
   --f-h1-tab-l: 2.5rem;
   --f-h1-xl: 3.125rem;
@@ -134,7 +134,7 @@ h1 {
   letter-spacing: 0.05em;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 1.4;
   color: var(--col-primary);
   letter-spacing: 0.05em;
@@ -152,7 +152,7 @@ h4 {
   letter-spacing: 0.05em;
 }
 button {
-  font-size: 1rem;
+  font-size: 0.875rem;
   outline: none;
   border: 0;
   background-color: transparent;
@@ -169,6 +169,9 @@ p {
 }
 
 @media (min-width: 600px) {
+  button {
+    font-size: 1rem;
+  }
   h1 {
     font-size: var(--f-h1-tab);
     font-weight: 500;
