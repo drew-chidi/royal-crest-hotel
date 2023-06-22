@@ -1,8 +1,8 @@
 .heroContainer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.53)),
-    url("../../assets/images/royal-crest-building.jpeg");
+    url('../../assets/images/royal-crest-building.jpeg');
   color: rgba(255, 255, 255, 1);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: left;
   padding-bottom: 44.8px;
   background-repeat: no-repeat;
@@ -13,12 +13,12 @@
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.53)),
-    url("../../assets/images/studio-room.jpg") !important;
+    url('../../assets/images/studio-room.jpg') !important;
 }
 .bgImageFacilities {
   background-image: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.53));
   color: rgba(255, 255, 255, 1);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: left;
   display: relative;
   padding-bottom: 0 !important;
@@ -66,21 +66,21 @@
   margin: 0.1em 0;
 }
 .welcomep1 {
-  font-size: 0.625rem;
+  font-size: 0.825rem;
   font-weight: 400;
   line-height: 1.22;
   letter-spacing: 0em;
   padding-top: 9em;
 }
 .welcomep2 {
-  font-size: 0.75rem;
+  font-size: 0.825rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.4em;
   margin-bottom: 0.1em;
 }
 .welcomep3 {
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.1em;
@@ -104,13 +104,13 @@
 }
 @media (min-width: 480px) {
   .welcomep1 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .welcomeHeading {
     font-size: 2.4rem;
   }
   .welcomep2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 600px) {
@@ -124,10 +124,6 @@
 @media (min-width: 768px) {
   .heroContainer {
     padding-bottom: 89.6px;
-  }
-  .welcomep1,
-  .welcomep2 {
-    font-size: 1.125rem;
   }
   .welcomep3 {
     font-size: 1rem;
