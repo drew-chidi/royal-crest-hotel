@@ -72,6 +72,9 @@ const RoomsContent = () => {
                   </div>
                 </div>
                 <p className={styles.description}>{item.description}</p>
+                <p className={styles.rate}>
+                  Rate: <strong>{item.rate}</strong>
+                </p>
               </div>
             </div>
           ))}

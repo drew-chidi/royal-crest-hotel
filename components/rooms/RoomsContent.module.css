@@ -45,11 +45,16 @@
 }
 .description {
   margin-top: 1em;
-  margin-bottom: 4em;
   border-left: 1px solid var(--col-primary);
   padding-left: 0.5em;
 }
-
+.rate {
+  margin-top: 1rem;
+  margin-bottom: 4em;
+}
+.rate strong {
+  font-size: 1.06rem;
+}
 .divider {
   margin-bottom: 40px;
 }
@@ -81,7 +86,13 @@
     margin-top: 0em;
   }
   .description {
+    /* margin-bottom: 0; */
+  }
+  .rate {
     margin-bottom: 0;
+  }
+  .rate strong {
+    font-size: 1.125rem;
   }
   .itemBox {
     margin-bottom: 38.1px;

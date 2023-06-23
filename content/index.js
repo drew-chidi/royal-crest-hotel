@@ -76,6 +76,7 @@ export const roomContents = {
       checkout: '12noon',
       description:
         'Our studio room is a cozy and functional space perfect for solo travelers or couples. This compact unit features a combined living and sleeping area, a private bathroom, and essential amenities. Experience comfortable and cost-effective accommodation with all the essentials you need for a pleasant stay.',
+      rate: 'NGN23,000.00',
     },
     {
       id: '2',
@@ -86,6 +87,7 @@ export const roomContents = {
       checkout: '12noon',
       description:
         'Our classic room is a traditional, comfortable accommodation option that is budget-friendly and cozy accommodation for solo travelers or couples seeking comfort and convenience. It offers a traditional, relaxed atmosphere with basic amenities, making it an ideal base for your travels.',
+      rate: 'NGN25,000.00',
     },
     {
       id: '3',
@@ -96,6 +98,7 @@ export const roomContents = {
       checkout: '12noon',
       description:
         'The Royal Crest Deluxe Room offers luxurious comfort and amenities, with spacious and elegant accommodations. Features include comfortable beds, sitting area, flat-screen TV, Wi-Fi, mini-fridge, and private bathroom with premium toiletries. The Deluxe Room provides ultimate comfort and style in a larger space for families, couples, or those seeking an upscale experience.',
+      rate: 'NGN32,000.00',
     },
     {
       id: '4',
@@ -106,6 +109,7 @@ export const roomContents = {
       checkout: '12noon',
       description:
         'Our premium room offers luxury and comfort with spacious,  elegantly designed interiors featuring a king-size bed and separate seating area. Enjoy extras such as a minibar, fast Wi-Fi, flat-screen TV, and coffee/tea maker. Experience a memorable stay with our focus on comfort and convenience.',
+      rate: 'NGN35,000.00',
     },
     {
       id: '5',
@@ -116,6 +120,7 @@ export const roomContents = {
       checkout: '12noon',
       description:
         'Our diplomatic suite offers luxurious and spacious accommodations with separate living and bedroom areas, private bathroom, elegant decor and high-end furnishings. Ideal for business travelers, families, or those seeking a luxurious stay experience.',
+      rate: 'NGN70,000.00',
     },
   ],
 };
